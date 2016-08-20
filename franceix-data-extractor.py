@@ -76,11 +76,13 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--file', "-f", type=str, required=True)
     parser.add_argument('--date', "-d", required=True, type=valid_date)
+    parser.add_argument('--period', "-p", required=True)
     parser.add_argument('--maxY', "-y", required=True, type=valid_bitcount,help="maximum quantity of bytes in the Y axis")
     args = parser.parse_args()
 
     df = extract_data_from_graph(args.file)
-    df = scale_data_to_date(df, args.date)
+    period=pd.Timedelta(args.period)
+    df = scale_data_to_date(df, args.date-1*period,observation_time_span=period)
     df=df*args.maxY
     df.to_csv(sys.stdout)
 

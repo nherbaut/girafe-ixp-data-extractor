@@ -15,5 +15,5 @@ if not os.path.isfile(args.file):
   raise ValueError
 df=pd.read_csv(args.file,names=["time","values"])
 ts=pd.Series(df["values"].values,index=pd.to_datetime(df["time"]))
-ts.resample(args.resample).mean().to_csv(args.output)
+ts.resample(args.resample).mean().bfill().to_csv(args.output)
 

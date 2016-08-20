@@ -1,11 +1,13 @@
+ROOT=.
 rm *.csvx
-cat /home/admin/data2/target.csv |sed -rn 's/^(.*),(.*),(.*)$/wget --no-check-certificate "\2" -O \/home\/admin\/data2\/\1-$(date "+%Y-%m-%dT%H:%M:%S").png -q/p' | source /dev/stdin
+cat $1 |sed -rn 's/^(.*),(.*),(.*)$/wget --no-check-certificate "\2" -O \1-$(date "+%Y-%m-%dT%H:%M:%S").png -q/p' | source /dev/stdin
 
-for t in `ls *.png | sed -r "s/^([a-z]{2})-([a-z0-9]{1,5})-.*$/\1-\2/p"|uniq`; do
-scaleY=$(cat target.csv|grep $t|sed -r "s/.*,(.*)$/\1/g")
+for t in `ls *.png | sed -r "s/^([a-z]{1,2}-[a-z0-9]{1,5}_[0-9][wdWD])-.*$/\1/p"|uniq`; do
+scaleY=$(cat $1|grep $t|sed -r "s/.*,(.*)$/\1/g")
    for i in `ls $t*.png`; do
-   adate=$(ls $i|sed -r "s/[a-z]{1,2}-[a-z0-9]{1,5}-(.*)\.png/\1/g")
-   ./franceix-data-extractor.py --file $i --date $adate --maxY $scaleY >> $t.csvx
+   adate=$(ls $i|sed -r "s/^[a-z]{1,2}-[a-z0-9]{1,5}_[0-9][wdWD]-(.*)\.png/\1/g")
+   period=$(ls $i|sed -r "s/^[a-z]{1,2}-[a-z0-9]{1,5}_([0-9][wdWD])-.*\.png/\1/g")
+   ./franceix-data-extractor.py --file $i --date $adate --maxY $scaleY -p $period>> $t.csvx
    echo "extracted $i"
    done
    echo "consolidating $t"
