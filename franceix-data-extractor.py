@@ -31,7 +31,7 @@ def extract_data_from_graph(file_path):
 
 def valid_date(s):
     try:
-        return pd.to_datetime(s)
+        return pd.to_datetime(s)-pd.Timedelta("1D")
     except ValueError:
         msg = "Not a valid date: '{0}'.".format(s)
         raise argparse.ArgumentTypeError(msg)
