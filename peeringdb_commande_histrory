@@ -1,0 +1,32 @@
+
+# best solution found
+
+for FICIX
+
+```
+import peeringdb
+
+from pprint import pprint
+
+pdb = peeringdb.PeeringDB()
+
+peerings = pdb.all('netixlan', ixlan_id=98)
+for peer in peerings:
+    net = pdb.all('net', asn=peer['asn'])[0]
+    print("%s\t\t%d\t\t(%s)" % (net['name'], peer['speed'],net['info_type']))
+
+```
+
+
+# get data (not best solution)
+
+```
+curl https://www.peeringdb.com/api/ixlan/98?depth=4  | json_pp
+```
+
+or
+
+```
+peeringdb get ixlan98 --depth 4 > lala
+```
+
