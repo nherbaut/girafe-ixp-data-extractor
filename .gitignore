@@ -1,6 +1,9 @@
 # Created by https://www.gitignore.io/api/python
 
 .*
+linx-*
+*.csvx
+*.png
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
