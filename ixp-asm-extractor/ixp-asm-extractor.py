@@ -15,17 +15,17 @@ def extract_data_peerdb(ixp, cache):
     for peer in peerings:
         try:
             net = pdb.all('net', asn=peer['asn'])[0]
-            print("Name: {0:40} speed:{1:10} ({2})".format(net['name'], peer['speed'], net['info_type']))
+            print("Name: {0:40} speed:{1:10}M ({2})".format(net['name'], peer['speed'], net['info_type']))
             if not net['info_type'] in info_types:
                 info_types[net['info_type']] = 0
             info_types[net['info_type']] += int(peer['speed']);
             csv += "\n%s,%s,%s" % (net['name'], peer['speed'], net['info_type'])
         except:
-            print("Name: {0:40} speed:{1:10} ({2})".format("Error 404", peer['speed'], "Error 404"))
+            print("Name: {0:40} speed:{1:10}M ({2})".format(peer['asn'], peer['speed'], "Error 404"))
             if not '404' in info_types:
                 info_types['404'] = 0
             info_types['404'] += int(peer['speed']);
-            csv += "\n%s,%s,%s" % ('Error 404', peer['speed'], 'Error 404')
+            csv += "\n%s,%s,%s" % (peer['asn'], peer['speed'], 'Error 404')
         totalBW += peer['speed'];
 
     with open(cache, 'w') as cache_file:
@@ -58,18 +58,18 @@ def makeFigure(info_types, ixp, out, content):
     info_typessimple = {};
     if content:
         for value in info_types:
-            if not value == 'Content':
+            if not (value == 'Content') :
                 if not 'other' in info_typessimple:
                     info_typessimple['other'] = 0
-                info_typessimple['other'] = info_types[value]
+                info_typessimple['other'] += info_types[value]
             else:
-                info_typessimple[value] = info_types[value]
+                info_typessimple['Content'] = info_types[value]
     else:
         for value in info_types:
             if float(info_types[value]) / float(BW) < 0.1:
                 if not 'other' in info_typessimple:
                     info_typessimple['other'] = 0
-                info_typessimple['other'] = info_types[value]
+                info_typessimple['other'] += info_types[value]
             else:
                 info_typessimple[value] = info_types[value]
 
