@@ -1,0 +1,8 @@
+msk-ix-daily,http://www.msk-ix.ru/data/json/traffic/ix.all/daily/,5T,1D
+msk-ix-weekly,http://www.msk-ix.ru/data/json/traffic/ix.all/weekly/,30T,7D
+msk-ix-monthly,http://www.msk-ix.ru/data/json/traffic/ix.all/monthly/,2H,31D
+msk-ix-yearly,http://www.msk-ix.ru/data/json/traffic/ix.all/yearly/,1D,366D
+msk-ix-ipv6-daily,http://www.msk-ix.ru/data/json/traffic/ix.ipv6/daily/,5T,1D
+msk-ix-ipv6-weekly,http://www.msk-ix.ru/data/json/traffic/ix.ipv6/weekly/,30T,7D
+msk-ix-ipv6-monthly,http://www.msk-ix.ru/data/json/traffic/ix.ipv6/monthly/,2H,31D
+msk-ix-ipv6-yearly,http://www.msk-ix.ru/data/json/traffic/ix.ipv6/yearly/,1D,366D
