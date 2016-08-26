@@ -1,0 +1,4 @@
+linx-daily,https://stats.linx.net/api/throughput/lan,5T,1D
+linx-weekly,https://stats.linx.net/api/throughput/lan/all/week,1H,7D
+linx-monthly,https://stats.linx.net/api/throughput/lan/all/month,1H,31D
+linx-yearly,https://stats.linx.net/api/throughput/lan/all/year,1D,366D

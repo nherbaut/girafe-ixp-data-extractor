@@ -19,7 +19,7 @@ def extract_data_peerdb(ixp, cache):
             if not net['info_type'] in info_types:
                 info_types[net['info_type']] = 0
             info_types[net['info_type']] += int(peer['speed']);
-            csv += "\n%s,%s,%s" % (net['name'], peer['speed'], net['info_type'])
+            csv += "\n%s,%s,%s" % (net['name'].replace(',',' '), peer['speed'], net['info_type'])
         except:
             print("Name: {0:40} speed:{1:10}M ({2})".format(peer['asn'], peer['speed'], "Error 404"))
             if not '404' in info_types:

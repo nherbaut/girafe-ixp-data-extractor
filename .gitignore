@@ -5,6 +5,8 @@ linx-*
 *.csvx
 *.png
 *.svg
+out/
+
 ### Python ###
 # Byte-compiled / optimized / DLL files
 __pycache__/
