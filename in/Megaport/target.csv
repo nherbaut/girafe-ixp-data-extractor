@@ -1,0 +1,15 @@
+Sydney-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Sydney%20IX,5T,1D
+Brisbane-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Brisbane%20IX,5T,1D
+Melbourne-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Melbourne%20IX,5T,1D
+Singapore-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Singapore%20IX,5T,1D
+Auckland-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Auckland%20IX,5T,1D
+Hong-Kong-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Hong%20Kong%20IX,5T,1D
+Chicago-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Chicago%20IX,5T,1D
+Bay-Area-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Bay%20Area%20IX,5T,1D
+Seattle-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Seattle%20IX,5T,1D
+Los-Angeles-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Los%20Angeles%20IX,5T,1D
+Ashburn-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Ashburn%20IX,5T,1D
+New-York-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=New%20York%20IX,5T,1D
+Dallas-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Dallas%20IX,5T,1D
+Toronto-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Toronto%20IX,5T,1D
+Perth-IX-daily,https://api.megaport.com/v2/graph/ixAggregate?ixName=Perth%20IX,5T,1D

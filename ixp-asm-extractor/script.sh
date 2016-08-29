@@ -12,7 +12,7 @@ for t in `cat $1 |sed -rn 's/^(.*),(.*),(.*)$/\2/p'`; do
    echo -e "\e[32mworking with $name ($t) from $org\e[39m"
    DIROUT=$(echo $DIR | sed 's/\/ixp-asm-extractor//')
    mkdir -p "${DIROUT}/out/${org}/"
-   $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}.temp"
+   $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}.temp" $2 $3
    echo -e "\e[32mFinish for $name \e[39m"
 done
 
