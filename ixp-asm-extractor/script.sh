@@ -7,8 +7,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 echo -e "\e[32mfor each config key"
 for t in `cat $1 |sed -rn 's/^(.*),(.*),(.*)$/\2/p'`; do
-   name=$(cat $1 |grep $t |sed -rn 's/^(.*),(.*),(.*)$/\1/p')
-   org=$(cat $1 |grep $t |sed -rn 's/^(.*),(.*),(.*)$/\3/p')
+   name=$(cat $1 |grep ",$t," |sed -rn 's/^(.*),(.*),(.*)$/\1/p')
+   org=$(cat $1 |grep ",$t," |sed -rn 's/^(.*),(.*),(.*)$/\3/p')
    echo -e "\e[32mworking with $name ($t) from $org\e[39m"
    DIROUT=$(echo $DIR | sed 's/\/ixp-asm-extractor//')
    mkdir -p "${DIROUT}/out/${org}/"
