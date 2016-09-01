@@ -9,7 +9,6 @@ import csv
 import os
 
 
-
 def extract_data_peerdb(ixp, cache):
     pdb = peeringdb.PeeringDB()
     peerings = pdb.all('netixlan', ixlan_id=ixp)
