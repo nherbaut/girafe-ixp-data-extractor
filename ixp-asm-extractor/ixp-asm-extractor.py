@@ -1,9 +1,13 @@
 #!/usr/bin/env python
+import matplotlib
+# Force matplotlib to not use any Xwindows backend.
+matplotlib.use('Agg')
 import argparse
 import peeringdb
 from pylab import *
 import csv
 import os
+
 
 
 def extract_data_peerdb(ixp, cache):
