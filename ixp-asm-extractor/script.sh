@@ -16,6 +16,7 @@ for t in `cat $1 |sed -rn 's/^(.*),(.*),(.*)$/\2/p'`; do
       $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}.temp" $2 $3
    else
       $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}-$(date "+%Y-%m-%dT%H:%M:%S").temp" $2 $3
+      cp "${DIROUT}/out/${org}/${name}-$(date "+%Y-%m-%dT%H:%M:%S").temp" "${DIROUT}/out/${org}/${name}.temp"
    fi
    echo -e "\e[32mFinish for $name \e[39m"
 done
