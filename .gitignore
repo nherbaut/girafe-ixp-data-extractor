@@ -1,11 +1,11 @@
 # Created by https://www.gitignore.io/api/python
 
 .*
-
+*.temp
 *.csvx
-*.png
+
 *.svg
-out/
+
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
