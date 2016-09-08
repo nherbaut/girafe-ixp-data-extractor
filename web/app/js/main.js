@@ -1,10 +1,13 @@
 var timeFormat = 'MM/DD/YYYY HH:mm';
 var targetfolder = "./target/";
+var outfolder = "../out/";
+var infolder = "../in/";
 var targetfile = targetfolder + "target.csv";
 var urlVideo = "http://localhost:9002/cdn.mpd";
 var urlVideoSD = "http://localhost:9003/cdnld.mpd";
 var urlVideoHD = "http://localhost:9003/cdnhd.mpd";
 var urlMPD = "/api/simu/mpd/";
+var DATA = {};
 
 
 var dataIXPs = []
@@ -23,13 +26,14 @@ $.ajax({
 var table = document.getElementById("Organization");
 var row = table.insertRow(1);
 dataIXPs.forEach(function (element) {
+    DATA[element[0]] = element
     var row = table.insertRow(1);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
     cell1.innerHTML = "<b>" + element[0] + "</b>";
     cell2.innerHTML = element[1];
-    cell3.innerHTML = element[2].replace(/\./gi, ", ");
+    cell3.innerHTML = element[2].replace(/\./gi, ", ")
 }, this);
 // remove last value (to keep visual effect)
 table.deleteRow(table.children[1].children.length)
@@ -44,8 +48,8 @@ if (table != null) {
 
 function tableText(tableCell) {
     ixp = tableCell.cells[0].innerText
-    propername=ixp.replace(/\./gi, "")
-    var $BOX_PANEL = $("#"+propername).closest('.closable');
+    propername = ixp.replace(/\./gi, "")
+    var $BOX_PANEL = $("#" + propername).closest('.closable');
     $BOX_PANEL.remove();
     $.ajax({
         url: "./app/html/template.html",
@@ -54,7 +58,7 @@ function tableText(tableCell) {
             //Parse it (optional, only necessary if template is to be used again)
             Mustache.parse(template);
             //Render the data into the template
-            var rendered = Mustache.render(template, {ixpname: ixp,ixppropername:propername});
+            var rendered = Mustache.render(template, {ixpname: ixp, ixppropername: propername});
             $("#ixp").before(rendered);
         },
         dataType: "text",
@@ -62,19 +66,25 @@ function tableText(tableCell) {
             // call a function on complete
         }
     });
-
-    $.ajax({
-        url: targetfolder + ixp + ".csv",
-        async: false,
-        success: function (csvd) {
-            dataixp = $.csv.toArrays(csvd);
-        },
-        dataType: "text",
-        complete: function () {
-            // call a function on complete
-        }
-    });
-    refresh();
+    var dataixp = []
+    if (DATA[propername]["ixplist"]){
+        dataixp = DATA[propername]["ixplist"]}
+    else
+    {
+        $.ajax({
+            url: infolder + ixp + "/ixplist.csv",
+            async: false,
+            success: function (csvd) {
+                dataixp = $.csv.toArrays(csvd);
+                DATA[propername]["ixplist"]=dataixp
+            },
+            dataType: "text",
+            complete: function () {
+                // call a function on complete
+            }
+        });
+        refresh();
+    }
 
     var table = document.getElementById(ixp);
     var row = table.insertRow(1);
@@ -85,7 +95,7 @@ function tableText(tableCell) {
         var cell3 = row.insertCell(2);
         cell1.innerHTML = "<b>" + element[0] + "</b>";
         cell2.innerHTML = element[1];
-        cell3.innerHTML = humanFileSize(element[2]*1024*1024,true);
+        cell3.innerHTML = humanFileSize(element[2] * 1024 * 1024, true);
     }, this);
     table.deleteRow(table.children[1].children.length)
 }
