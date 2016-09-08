@@ -1,5 +1,5 @@
-LINX LON1,18,LINX
-LINX LON2,321,LINX
+London Juniper,18,LINX
+London Extreme,321,LINX
 LINX NoVA,777,LINX
 IXScotland,745,LINX
 IXManchester,583,LINX
@@ -10,15 +10,16 @@ ECIX-FRA,676,ECIX
 ECIX-HAM,291,ECIX
 INXS by ecix,73,ECIX
 NIX.CZ,71,NIX.CZ
-EKT-IX,350,MSK-IX
-KZN-IX,398,MSK-IX
-MSK-IX,100,MSK-IX
-NSK-IX,223,MSK-IX
-RND-IX,380,MSK-IX
-SMR-IX,379,MSK-IX
-SPB-IX,107,MSK-IX
-STW-IX,580,MSK-IX
-VLV-IX,378,MSK-IX
+NIX.SK,299,NIX.CZ
+MSK-IX Ekaterinburg,350,MSK-IX
+MSK-IX Kazan,398,MSK-IX
+MSK-IX Moscow,100,MSK-IX
+MSK-IX Novosibirsk,223,MSK-IX
+MSK-IX Rostov-on-Don,380,MSK-IX
+MSK-IX Saint-Petersburg,379,MSK-IX
+MSK-IX Samara,107,MSK-IX
+MSK-IX Stavropol,580,MSK-IX
+MSK-IX Vladivostok,378,MSK-IX
 France-IX,359,France-IX
 France-IX Marseille,880,France-IX
 Sydney IX,780,Megaport
@@ -30,7 +31,7 @@ Hong Kong IX,1037,Megaport
 Chicago IX,1177,Megaport
 Bay Area IX,1176,Megaport
 Seattle IX,1174,Megaport
-Los Angeles,1175,Megaport
+Los Angeles IX,1175,Megaport
 Ashburn IX,1178,Megaport
 New York IX,1179,Megaport
 Dallas IX,1180,Megaport

@@ -1,4 +1,5 @@
-m-pa6-daily,https://tools.franceix.net/static/images/observium/pa6-1d_from0.png,10G,1D
+pa-daily,https://tools.franceix.net/static/images/observium/all-par-1d.png,600G,1D
+pa-pa6-daily,https://tools.franceix.net/static/images/observium/pa6-1d_from0.png,10G,1D
 pa-pa7-daily,https://tools.franceix.net/static/images/observium/pa7-1d_from0.png,10G,1D
 pa-dc2-daily,https://tools.franceix.net/static/images/observium/dc2-1d_from0.png,10G,1D
 pa-dc3-daily,https://tools.franceix.net/static/images/observium/dc3-1d_from0.png,10G,1D
@@ -7,8 +8,10 @@ pa-par2-daily,https://tools.franceix.net/static/images/observium/par2-1d_from0.p
 pa-par5-daily,https://tools.franceix.net/static/images/observium/par5-1d_from0.png,10G,1D
 pa-th2-daily,https://tools.franceix.net/static/images/observium/th2-1d_from0.png,10G,1D
 pa-th3-daily,https://tools.franceix.net/static/images/observium/th3-1d_from0.png,10G,1D
+ma-daily,https://tools.franceix.net/static/images/observium/all-mrs-1d.png,60G,1D
 ma-i-daily,https://tools.franceix.net/static/images/observium/i-mrs01-1d_from0.png,10G,1D
 ma-j-daily,https://tools.franceix.net/static/images/observium/j-mrs01-1d_from0.png,10G,1D
+pa-weekly,https://tools.franceix.net/static/images/observium/all-par-1w.png,600G,7D
 pa-pa6-weekly,https://tools.franceix.net/static/images/observium/pa6-1w_from0.png,10G,7D
 pa-pa7-weekly,https://tools.franceix.net/static/images/observium/pa7-1w_from0.png,10G,7D
 pa-dc2-weekly,https://tools.franceix.net/static/images/observium/dc2-1w_from0.png,10G,7D
@@ -18,4 +21,6 @@ pa-par2-weekly,https://tools.franceix.net/static/images/observium/par2-1w_from0.
 pa-par5-weekly,https://tools.franceix.net/static/images/observium/par5-1w_from0.png,10G,7D
 pa-th2-weekly,https://tools.franceix.net/static/images/observium/th2-1w_from0.png,10G,7D
 pa-th3-weekly,https://tools.franceix.net/static/images/observium/th3-1w_from0.png,10G,7D
+ma-weekly,https://tools.franceix.net/static/images/observium/all-mrs-1d.png,60G,7D
 ma-i-weekly,https://tools.franceix.net/static/images/observium/i-mrs01-1w_from0.png,10G,7D
+ma-j-weekly,https://tools.franceix.net/static/images/observium/j-mrs01-1w_from0.png,10G,7D
