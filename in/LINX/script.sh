@@ -12,12 +12,12 @@ maxloop=10
 for value in `cat $1`;do
 
     echo wget --no-check-certificate $(echo $value | tr "," "\n" | sed -n 2p) -O $DIROUT\/$(echo $value | tr "," "\n" | sed -n 1p)--$date.json | source /dev/stdin
-    actualsize=$(wc -c < $DIROUT\/\$(echo $value | tr ',' '\n' | sed -n 1p)--$date.json )
+    actualsize=$(wc -c < $DIROUT\/$(echo $value | tr ',' '\n' | sed -n 1p)--$date.json )
     try=0
     while [ $minimumsize -ge $actualsize ];do
         echo -e "\e[93mfile empty restart\e[39m"
         echo wget --no-check-certificate $(echo $value | tr "," "\n" | sed -n 2p) -O $DIROUT\/$(echo $value | tr "," "\n" | sed -n 1p)--$date.json | source /dev/stdin
-        actualsize=$(wc -c < $DIROUT\/\$(echo $value | tr ',' '\n' | sed -n 1p)--$date.json )
+        actualsize=$(wc -c < $DIROUT\/$(echo $value | tr ',' '\n' | sed -n 1p)--$date.json )
         try=$[$try+1]
         if  [ $try -ge $maxloop ]; then
             echo -e "\e[91mcan not get the file now\e[39m"
