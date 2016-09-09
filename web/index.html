@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>G.I.R.A.F.E. </title>
+
+    <!-- Bootstrap -->
+    <link href="./vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="./vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- jQuery custom content scroller -->
+    <link href="./vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+    <!-- Ion.RangeSlider -->
+    <link href="./vendors/normalize-css/normalize.css" rel="stylesheet">
+    <link href="./vendors/ion.rangeSlider/css/ion.rangeSlider.css" rel="stylesheet">
+    <link href="./vendors/ion.rangeSlider/css/ion.rangeSlider.skinFlat.css" rel="stylesheet">
+
+    <!--<link href="./vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">-->
+    <!--<link href="./vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">-->
+
+    <link href="./vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+    <link href="./vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+    <!--<link href="./vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- Custom Theme Style -->
+    <link href="./app/css/custom.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="./app/css/main.css" rel="stylesheet">
+
+    <link rel="icon" href="./app/img/GIRAFE2.ico"/>
+
+
+</head>
+
+<body class="nav-sm">
+<div class="container body">
+    <div class="main_container">
+
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+            <div class="row">
+                <div class="page-title">
+                    <div class="pull-right">
+                        <a href="https://fr.linkedin.com/in/david-bourasseau-71998b82">David Bourasseau,</a>
+                        <!--</div>-->
+                        <!--<div class="pull-right">-->
+                        <a href="http://www.labri.fr/perso/nherbaut/">Nicolas Herbaut,</a>
+                        <!--</div>-->
+                        <!--<div class="pull-right">-->
+                        <a href="http://www.labri.fr/~negru">Daniel Negru</a>
+                    </div>
+                    <div class="title">
+
+                        <h3><img src="./app/img/GIRAFE0.svg"
+                                 style="max-height: 100px;max-width: 100px; margin-top: -30px; margin-bottom: -20px">G.I.R.A.F.E.
+                            <small>Graphical Interface for Representing Automatic Function Embedding</small>
+                        </h3>
+                    </div>
+
+
+                </div>
+            </div>
+            <!------------------------ Topo viewer ------------------------------------->
+            <div class="clearfix"></div>
+            <!--<div class="closable"></div>-->
+            <div class="col-md-3 col-sm-12 col-xs-12 ">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>Organization list</h2>
+
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-expanded="false"><i class="fa fa-wrench"></i></a>
+
+                            </li>
+                            <li class="disabled" ><a  class="close-link"><i style="color:#C5C7CB;" class="fa fa-close "></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <thead>
+                        <table class="table table-hover" id="Organization" style="cursor: pointer;">
+                            <thead>
+                            <tr>
+                                <th>Short Name</th>
+                                <th>Long Name</th>
+                                <th>Country</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <!--put one to keep visual effect-->
+                            <tr>
+                                <th></th>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        </thead>
+                    </div>
+                </div>
+
+
+            </div>
+            <!------------------------ Load Topo  ------------------------------------->
+            <div id="ixp">
+
+            </div>
+
+            <!------------------------ SLA ------------------------------------->
+            <div id="ixpinfo">
+
+            </div>
+            <!--<div class="col-md-3 col-sm-12 col-xs-12">-->
+                <!--<div class="x_panel">-->
+                    <!--<div class="x_title">-->
+                        <!--<h2>IXP list</h2>-->
+
+                        <!--<ul class="nav navbar-right panel_toolbox">-->
+                            <!--<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>-->
+                            <!--</li>-->
+                            <!--<li class="dropdown">-->
+                                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+                                   <!--aria-expanded="false"><i class="fa fa-wrench"></i></a>-->
+
+                            <!--</li>-->
+                            <!--<li><a class="close-link"><i class="fa fa-close"></i></a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                        <!--<div class="clearfix"></div>-->
+                    <!--</div>-->
+                    <!--<div class="x_content">-->
+                        <!--<thead>-->
+                        <!--<img width="100%" src="../out/LINX/LINX%20LON2.svg">-->
+                        <!--<div class="form-horizontal form-label-left form-group">-->
+                            <!--<label class="control-label col-md-9 col-sm-9 col-xs-12">Raw data :</label>-->
+                            <!--<div class="col-md-3 col-sm-3 col-xs-12">-->
+                                <!--<a class="btn  btn-sm btn-app" href="../out/LINX/linx-daily_lon2_5T.csvx"-->
+                                   <!--download="linx-daily_lon2_5T.csv">-->
+                                    <!--<i class="fa fa-save"></i> Save-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="form-horizontal form-label-left form-group">-->
+                            <!--<label class="control-label col-md-9 col-sm-9 col-xs-12">Estimate content data :</label>-->
+                            <!--<div class="col-md-3 col-sm-3 col-xs-12">-->
+                                <!--<a class="btn btn-app btn-xs" href="../out/LINX/linx-daily_lon2_5T.csvx"-->
+                                   <!--download="linx-daily_lon2_5T.csv">-->
+                                    <!--<i class="fa fa-save"></i> Save-->
+                                <!--</a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                        <!--</thead>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+            <!--</div>-->
+
+
+            <!----------------------------Video player---------------------------->
+            <div class="clearfix"></div>
+            <div class="col-md-4 col-sm-4 col-xs-4" id="videoHDWindow" style="display: none;">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>HD Premium Profile
+                        </h2>
+
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Settings 1</a>
+                                    </li>
+                                    <li><a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <p>
+                            Clients requests are always routed to the vCDN.</p>
+                        <body>
+                        <div>
+                            <video id="videoPlayerHD" preload="none" autoplay="false" controls loop></video>
+                        </div>
+                        </body>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-4" id="videoWindow" style="display: none;">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>HD Profile
+                        </h2>
+
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Settings 1</a>
+                                    </li>
+                                    <li><a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <p>
+                            Clients requests are routed to the vCDN if the bandwidth allows it. SD fallback is activated
+                            if the vCDN link is saturated.
+                        </p>
+                        <body>
+                        <div>
+                            <video id="videoPlayer" preload="none" autoplay="false" controls loop></video>
+                        </div>
+                        </body>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-4" id="videoSDWindow" style="display: none;">
+                <div class="x_panel">
+                    <div class="x_title">
+                        <h2>SD Profile
+                        </h2>
+
+                        <ul class="nav navbar-right panel_toolbox">
+                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">Settings 1</a>
+                                    </li>
+                                    <li><a href="#">Settings 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a class="close-link"><i class="fa fa-close"></i></a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                        <p>Clients requests are always routed to the CDN.</p>
+                        <body>
+                        <div>
+                            <video id="videoPlayerSD" preload="none" autoplay="false" controls loop></video>
+                        </div>
+                        </body>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <!--<div class="col-md-6 col-sm-6 col-xs-6" id="graphWindow" style="display: none;">-->
+            <!--<div class="x_panel">-->
+            <!--<div class="x_title">-->
+            <!--<h2>Graph viewer </h2>-->
+            <!--<ul class="nav navbar-right panel_toolbox">-->
+            <!--<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>-->
+            <!--</li>-->
+            <!--<li class="dropdown">-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"-->
+            <!--aria-expanded="false"><i class="fa fa-wrench"></i></a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+            <!--<li><a href="#">Settings 1</a>-->
+            <!--</li>-->
+            <!--<li><a href="#">Settings 2</a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <!--<li><a class="close-link"><i class="fa fa-close"></i></a>-->
+            <!--</li>-->
+            <!--</ul>-->
+            <!--<div class="clearfix"></div>-->
+            <!--</div>-->
+
+            <!--<div class="x_content">-->
+            <!--<iframe class="chartjs-hidden-iframe"-->
+            <!--style="width: 100%; display: block; border: 0px; height: 0px; margin: 0px; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px;">-->
+            <!--</iframe>-->
+            <!--<canvas id="lineChart" style="width: 737px; height: 368px;" width="737" height="368">-->
+            <!--</canvas>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="clearfix"></div>-->
+        </div>
+    </div>
+    <!-- /page content -->
+
+    <!-- footer content -->
+    <footer>
+        <!--<div class="text-center ">-->
+
+            <!--<div class="pull-right">-->
+                <!--<a href="https://nextnet.top/sites/default/files/girafe.pdf">-->
+                    <!--Download Poster : <img class="img-thumbnail" src="./app/img/1.svg"-->
+                                           <!--style="max-height: 150px;max-width: 150px;">-->
+                <!--</a>-->
+            <!--</div>-->
+            <!--<a href="#">-->
+                <!--<img class="img-thumbnail" src="./app/img/GIRAFE.svg"-->
+                     <!--style="max-height: 150px;max-width: 150px;">-->
+            <!--</a>-->
+
+            <!--<a href="http://viotech.net/">-->
+                <!--<img class="img-thumbnail" src="./app/img/logo_white.svg" style="max-height: 150px;max-width: 250px">-->
+            <!--</a>-->
+            <!--<a href="http://www.labri.fr/">-->
+                <!--<img class="img-thumbnail" src="./app/img/LogoLabri.png" style="max-height: 100px;max-width: 150px">-->
+            <!--</a>-->
+            <!--<a href=https://www.u-bordeaux.fr/">-->
+                <!--<img class="img-thumbnail" src="./app/img/Universite%20Bordeaux%20RVB-10.jpeg"-->
+                     <!--style="max-height: 150px;max-width: 250px">-->
+            <!--</a>-->
+            <!--&lt;!&ndash;<div class="pull-right">&ndash;&gt;-->
+            <!--&lt;!&ndash;<a href="http://girafe.nextnet.top">G.I.R.A.F.E.</a>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--</div>-->
+
+        <!--<div class="clearfix"></div>-->
+    </footer>
+    <!-- /footer content -->
+</div>
+
+<!-- jQuery -->
+<script src="./vendors/jquery/dist/jquery.min.js"></script>
+<script src="./vendors/jquery-ui-1.12.0/jquery-ui.js"></script>
+<!-- Bootstrap -->
+<script src="./vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="./vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="./vendors/nprogress/nprogress.js"></script>
+<!-- Charte -->
+<script src="./vendors/Chart.js/dist/Chart.min.js"></script>
+<!-- jQuery custom content scroller -->
+<script src="./vendors/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- SNAP SVG  -->
+<script src="./vendors/snap/snap.svg-min.js"></script>
+<script src="./vendors/snap/snap.svg.zpd.js"></script>
+<!-- CSV parser -->
+<script src="./vendors/papaparse/papaparse.min.js"></script>
+<!--read csv -->
+<script src="./vendors/jquery-csv/src/jquery.csv.min.js"></script>
+<script src="./vendors/mustache/mustache.min.js"></script>
+<!--Sparklines-->
+<!--<script src="./vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>-->
+
+
+<!------------------------------------------custom js--------------------------------------------------->
+<script src="./app/js/static.js"></script>
+<script id="template" src="./app/html/template.html" type="x-tmpl-mustache"></script>
+
+<!-- MAIN.JS -->
+<script src="./app/js/main.js"></script>
+
+<!-- Ion.RangeSlider -->
+<!--<script src="./vendors/ion.rangeSlider/js/ion.rangeSlider.min.js"></script>-->
+<!--<script src="./app/js/sla.js">-->
+<!--</script>-->
+
+<!-- PLayer video -->
+<!--<script src="./vendors/dash/dash.all.min.js"></script>-->
+<!--<script src="./app/js/player.js"></script>-->
+<!-- Custom Theme Scripts -->
+<script src="./app/js/custom.js"></script>
+<!--<script src="./vendors/moment/moment.js"></script>-->
+
+
+
+<!--table-->
+<!--<script src="./vendors/datatables.net/js/jquery.dataTables.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>-->
+<!--<script src="./vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>-->
+
+<!--<script src="./vendors/datatables.net/js/jquery.dataTables.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-buttons/js/buttons.print.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>-->
+<!--<script src="./vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>-->
+<!--<script src="./vendors/datatables.net-scroller/js/datatables.scroller.min.js"></script>-->
+
+
+</body>
+</html>
