@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DIROUT=$(echo $DIR | sed 's/\/in/\/out/')
 mkdir -p $DIROUT
