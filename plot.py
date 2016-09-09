@@ -4,14 +4,13 @@ import os
 import sys
 import matplotlib.pyplot as plt
 
-print("open %s"%sys.argv[1])
-if not os.path.isfile(sys.argv[1]):
-  print "file unknown"
-  raise ValueError
-
-df=pd.read_csv(sys.argv[1],names=["time","values"])
-ts=pd.Series(df["values"].values,index=pd.to_datetime(df["time"]))
-ts.plot()
-plt.show()
-#name = raw_input("Enter for quit ")
+for datafile in sys.argv[1:]:
+    print("open %s" % datafile)
+    if not os.path.isfile(datafile):
+        print "file unknown"
+        raise ValueError
+    df = pd.read_csv(datafile, names=["time", "values"])
+    ts = pd.Series(df["values"].values, index=pd.to_datetime(df["time"]))
+    ts.plot()
+    plt.show()
 print("Finish")

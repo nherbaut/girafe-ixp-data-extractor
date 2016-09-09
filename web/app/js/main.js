@@ -57,12 +57,15 @@ function loadOrganization(tableCell) {
             //Parse it (optional, only necessary if template is to be used again)
             Mustache.parse(template);
             //Render the data into the template
-            var rendered = Mustache.render(template, {ixpname: Organization, ixppropername: propername});
+            var rendered = Mustache.render(template, {
+                organaname: Organization,
+                orgapropername: propername
+            });
             $("#ixp").before(rendered);
         },
         dataType: "text",
         complete: function () {
-            // call a function on complete
+            refresh();
         }
     });
 
@@ -78,7 +81,7 @@ function loadOrganization(tableCell) {
                 // call a function on complete
             }
         });
-        refresh();
+
     }
     DATA[Organization]["ixplist"].forEach(function (element) {
         $.ajax({
@@ -102,7 +105,7 @@ function loadOrganization(tableCell) {
             },
             dataType: "text",
             complete: function () {
-                // call a function on complete
+
             }
         });
     });
@@ -115,22 +118,52 @@ function loadOrganization(tableCell) {
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
+        var cell4 = row.insertCell(3);
         cell1.innerHTML = "<b>" + element[1] + "</b>";
         cell2.innerHTML = humanFileSize(DATA[Organization]["ixplist"][element[1]]["totalBW"] * 1024 * 1024, true);
-        cell3.innerHTML = parseInt(DATA[Organization]["ixplist"][element[1]]["contentBW"] /DATA[ixp]["ixplist"][element[1]]["totalBW"]*100)+"%";
+        cell3.innerHTML = parseInt(DATA[Organization]["ixplist"][element[1]]["contentBW"] / DATA[Organization]["ixplist"][element[1]]["totalBW"] * 100) + "%";
+        cell4.style = "display:none;"
+        cell4.innerHTML = Organization;
     }, this);
     table.deleteRow(table.children[1].children.length)
     if (table != null) {
         for (var i = 1; i < table.rows.length; i++) {
             table.rows[i].onclick = function () {
-                loadixp(this,Organization);
+                loadixp(this);
             };
         }
     }
 }
 
 
-function loadixp(tableCell,Organization) {
+function loadixp(tableCell) {
+    organization = tableCell.cells[3].innerText
     ixp = tableCell.cells[0].innerText
-    console.log(Organization+" "+ixp)
+    console.log(Organization + " " + ixp)
+    organizationproper = ixp.replace(/\./gi, "")
+    ixpproper = ixp.replace(/\./gi, "").replace(/ /gi, "_")
+    var $BOX_PANEL = $("#" + ixpproper).closest('.closable');
+    $BOX_PANEL.remove();
+    $.ajax({
+        url: "./app/html/templateixp.html",
+        async: false,
+        success: function (template) {
+            //Parse it (optional, only necessary if template is to be used again)
+            Mustache.parse(template);
+            //Render the data into the template
+            var rendered = Mustache.render(template, {
+                organname: organization,
+                orgapropername: organizationproper,
+                folder: outfolder,
+                ixpname: ixp,
+                ixppropername: ixpproper
+            });
+            $("#ixpinfo").before(rendered);
+        },
+        dataType: "text",
+        complete: function () {
+            refresh();
+        }
+    });
+
 }
