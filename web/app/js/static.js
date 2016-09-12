@@ -41,3 +41,10 @@ function humanFileSize(bytes, si) {
     } while(Math.abs(bytes) >= thresh && u < units.length - 1);
     return bytes.toFixed(1)+' '+units[u];
 }
+
+var randomColorFactor = function() {
+    return Math.round(Math.random() * 255);
+};
+var randomColor = function(opacity) {
+    return 'rgba(' + randomColorFactor() + ',' + randomColorFactor() + ',' + randomColorFactor() + ',' + (opacity || '.3') + ')';
+};

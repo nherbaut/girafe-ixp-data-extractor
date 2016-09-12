@@ -1099,7 +1099,8 @@ table.jambo_table tbody tr.selected td {
 .dataTables_filter {
   width: 50%;
   float: right;
-  text-align: right; }
+  text-align: right;
+  }
 
 .dataTables_info {
   width: 60%;
@@ -3293,4 +3294,4 @@ a.hiddenanchor {
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: both;
   -moz-animation-duration: 0.5s;
-  -moz-animation-timing
+  -moz-animation-

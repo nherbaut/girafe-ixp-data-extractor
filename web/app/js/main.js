@@ -8,6 +8,7 @@ var urlVideoSD = "http://localhost:9003/cdnld.mpd";
 var urlVideoHD = "http://localhost:9003/cdnhd.mpd";
 var urlMPD = "/api/simu/mpd/";
 var DATA = {};
+var TABLE={}
 
 var dataIXPs = []
 $.ajax({
@@ -111,40 +112,89 @@ function loadOrganization(tableCell) {
     });
 
 
-    var table = document.getElementById(propername);
-    var row = table.insertRow(1);
+    DATA[Organization]["ixplist"]["Table"] = []
+    id = 0
     DATA[Organization]["ixplist"].forEach(function (element) {
-        var row = table.insertRow(1);
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-        var cell4 = row.insertCell(3);
-        var cell5 = row.insertCell(4);
-        cell1.innerHTML = "<b>" + element[1] + "</b>";
-        cell2.innerHTML = humanFileSize(DATA[Organization]["ixplist"][element[1]]["totalBW"] * 1024 * 1024, true);
-        cell3.innerHTML = parseInt(DATA[Organization]["ixplist"][element[1]]["contentBW"] / DATA[Organization]["ixplist"][element[1]]["totalBW"] * 100) + "%";
-        cell4.style = "display:none;"
-        cell4.innerHTML = Organization;
-        cell5.style = "display:none;"
-        cell5.innerHTML = element[2];
-    }, this);
-    table.deleteRow(table.children[1].children.length)
-    if (table != null) {
-        for (var i = 1; i < table.rows.length; i++) {
-            table.rows[i].onclick = function () {
-                loadixp(this);
-            };
-        }
-    }
+
+
+        DATA[Organization]["ixplist"]["Table"][id] = [];
+        DATA[Organization]["ixplist"]["Table"][id][0] = "<b>" + element[1] + "</b>";
+        DATA[Organization]["ixplist"]["Table"][id][1] = humanFileSize(DATA[Organization]["ixplist"][element[1]]["totalBW"] * 1024 * 1024, true);
+        DATA[Organization]["ixplist"]["Table"][id][2] = parseInt(DATA[Organization]["ixplist"][element[1]]["contentBW"] / DATA[Organization]["ixplist"][element[1]]["totalBW"] * 100) + "%";
+        // cell4.style = "display:none;"
+        DATA[Organization]["ixplist"]["Table"][id][3] = Organization;
+        // cell5.style = "display:none;"
+        DATA[Organization]["ixplist"]["Table"][id][4] = element[2];
+        id = id + 1
+
+        // console.log(element)
+
+    });
+    // remove last value (to keep visual effect)
+    // table.deleteRow(table.children[1].children.length)
+
+
+    TABLE[propername] = $('#' + propername).DataTable({
+        data: DATA[Organization]["ixplist"]["Table"],
+        columns: [
+            {title: "Name"},
+            {title: "Bandwidth"},
+            {title: "Content part"},
+            {title: ""},
+            {title: ""}
+        ],
+        "columnDefs": [
+            {
+                "targets": [3],
+                "visible": false,
+                "searchable": false
+            },
+            {
+                "targets": [4],
+                "visible": false,
+                "searchable": false
+            }
+        ],
+        "dom": '<"top"fi>rt<"bottom"Bp><"clear">',
+        "iDisplayLength": 10,
+        buttons: [
+            {
+                extend: "copy",
+                className: "btn-sm"
+            },
+            {
+                extend: "csv",
+                className: "btn-sm"
+            }
+        ],
+        responsive: true,
+        "info": false,
+        "order": [[1, "desc"]]
+    });
+
+    $('#' + propername).on('click', 'tr', function () {
+        var data = TABLE[this.offsetParent.id].row( this ).data();
+        loadixp(data);
+    });
+
 }
 
 
 function loadixp(tableCell) {
-    organization = tableCell.cells[3].innerText
-    ixp = tableCell.cells[0].innerText
-    iddown = tableCell.cells[4].innerText
+
+        tableCell.forEach(function (element, index) {
+        var div = document.createElement("div");
+        div.innerHTML = element;
+        // var text = div.textContent || div.innerText || "";
+        tableCell[index] = div.innerText
+    });
+
+    organization = tableCell[3]
+    ixp = tableCell[0]
+    iddown = tableCell[4]
+
     console.log(Organization + " " + ixp)
-    organizationproper = ixp.replace(/\./gi, "").replace(/ /gi, "_")
+    organizationproper = organization.replace(/\./gi, "").replace(/ /gi, "_")
     ixpproper = ixp.replace(/\./gi, "").replace(/ /gi, "_")
     var $BOX_PANEL = $("#" + organizationproper + ixpproper).closest('.closable');
     $BOX_PANEL.remove();
@@ -170,6 +220,43 @@ function loadixp(tableCell) {
         }
     });
 
+    datacontent = [0, 0];
+    dataname = ["Other", "Other Content"];
+    datacolor = ["E5E5E5", "#6495ED"];
+
+    DATA[Organization]["ixplist"][ixp].forEach(function (asn) {
+        if (asn != "") {
+            if (asn[2] == "Content") {
+                if (parseInt(asn[1]) > (DATA[Organization]["ixplist"][ixp]["contentBW"] / 10)) {
+                    datacontent.push(asn[1]);
+                    dataname.push(asn[0]);
+                    datacolor.push(randomColor(0.7))
+                }
+                else {
+                    datacontent[1] = datacontent[1] + parseInt(asn[1]);
+                }
+            }
+            else {
+                datacontent[0] = datacontent[0] + parseInt(asn[1]);
+            }
+        }
+    })
+    var config = {
+        type: 'pie',
+        data: {
+            datasets: [{
+                data: datacontent,
+                backgroundColor: datacolor,
+            }],
+            labels: dataname
+        },
+        options: {
+            responsive: true
+        }
+    };
+    var ctx = document.getElementById(organizationproper + ixpproper + "-pie").getContext("2d");
+    window.myPie = new Chart(ctx, config);
+
 
     if (!DATA[Organization]["ixplist"][ixp]["downloadfiles"]) {
         $.ajax({
@@ -185,67 +272,115 @@ function loadixp(tableCell) {
         });
 
     }
-    var table = document.getElementById(organizationproper + ixpproper);
-    var row = table.insertRow(1);
+    var table2 = document.getElementById(organizationproper + ixpproper);
+
+    DATA[Organization]["ixplist"][ixp]["Table"] = []
+    dataSet = DATA[Organization]["ixplist"][ixp]["Table"]
+    // var row = table.insertRow(1);
+    id = 0
     DATA[Organization]["ixplist"][ixp]["downloadfiles"].forEach(function (element) {
         if (element[0].indexOf(iddown) !== -1) {
 
-            var split = element[0].split(".csvx")[0].split("_")
-            resolution = split[split.length - 1]
-            csvelement = element[0].substring(0, element[0].length - 1)
-
-            var row = table.insertRow(1);
-            var cell1 = row.insertCell(0);
-            var cell2 = row.insertCell(1);
-            var cell3 = row.insertCell(2);
-            var cell4 = row.insertCell(3);
-            var cell5 = row.insertCell(4);
-            var cell6 = row.insertCell(5);
-            var cell7 = row.insertCell(6);
-            cell1.innerHTML = resolution;
-            cell2.innerHTML = "<b>" + csvelement + "</b>";
-            cell3.innerHTML = '<a href="' + outfolder + Organization + "/" + element[0] + '" download="' + csvelement + '"> Save <i class="fa fa-save"></i>   </a>'
-            cell4.style = "display:none;"
-            cell4.innerHTML = outfolder + Organization + "/" + element[0];
-            cell5.style = "display:none;"
-            cell5.innerHTML = element[0];
-            cell6.style = "display:none;"
-            cell6.innerHTML = organization;
-            cell7.style = "display:none;"
-            cell7.innerHTML = ixp;
-
+            var split = element[0].split(".csvx")[0].split("_");
+            resolution = split[split.length - 1];
+            csvelement = element[0].substring(0, element[0].length - 1);
+            DATA[Organization]["ixplist"][ixp]["Table"][id] = [];
+            DATA[Organization]["ixplist"][ixp]["Table"][id][0] = resolution;
+            DATA[Organization]["ixplist"][ixp]["Table"][id][1] = "<b>" + csvelement + "</b>";
+            DATA[Organization]["ixplist"][ixp]["Table"][id][2] = '<a href="' + outfolder + Organization + "/" + element[0] + '" download="' + csvelement + '"> Save <i class="fa fa-save"></i>   </a>'
+            DATA[Organization]["ixplist"][ixp]["Table"][id][3] = outfolder + Organization + "/" + element[0];
+            DATA[Organization]["ixplist"][ixp]["Table"][id][4] = element[0];
+            DATA[Organization]["ixplist"][ixp]["Table"][id][5] = organization;
+            DATA[Organization]["ixplist"][ixp]["Table"][id][6] = ixp;
+            id = id + 1
         }
         // console.log(element)
 
     });
     // remove last value (to keep visual effect)
-    table.deleteRow(table.children[1].children.length)
-    if (table != null) {
-        for (var i = 1; i < table.rows.length; i++) {
-            table.rows[i].onclick = function () {
-                previewdata(this);
-            };
-        }
-    }
+    // table.deleteRow(table.children[1].children.length)
+
+
+     TABLE[organizationproper + ixpproper]= $('#' + organizationproper + ixpproper).DataTable({
+        data: DATA[Organization]["ixplist"][ixp]["Table"],
+        columns: [
+            {title: "Name"},
+            {title: "Resolution"},
+            {title: ""},
+            {title: ""},
+            {title: ""},
+            {title: ""},
+            {title: ""}
+        ],
+        "columnDefs": [
+            {
+                "targets": [3],
+                "visible": false,
+                "searchable": false
+            },
+            {
+                "targets": [4],
+                "visible": false,
+                "searchable": false
+            }, {
+                "targets": [5],
+                "visible": false,
+                "searchable": false
+            }, {
+                "targets": [6],
+                "visible": false,
+                "searchable": false
+            }
+        ],
+        // dom: "Bfrtip",
+        "dom": '<"top"fi>rt<"bottom"Bp><"clear">',
+        "iDisplayLength": 5,
+        buttons: [
+            {
+                extend: "copy",
+                className: "btn-sm"
+            },
+            {
+                extend: "csv",
+                className: "btn-sm"
+            }
+        ],
+        responsive: true,
+        "info": false,
+        "order": [[1, "desc"]]
+    });
+
+    $('#' + organizationproper + ixpproper).on('click', 'tr', function () {
+        var data = TABLE[this.offsetParent.id].row( this ).data();
+        previewdata(data);
+        
+    });
 
 
 }
 function previewdata(tableCell) {
     console.log(tableCell)
+    tableCell.forEach(function (element, index) {
+        var div = document.createElement("div");
+        div.innerHTML = element;
+        // var text = div.textContent || div.innerText || "";
+        tableCell[index] = div.innerText
+    });
+
 
     // organization = tableCell.cells[3].innerText
-    resolution = tableCell.cells[0].innerText
-    dataname = tableCell.cells[4].innerText
-    datafile = tableCell.cells[3].innerText
-    organization = tableCell.cells[5].innerText
-    ixp = tableCell.cells[6].innerText
-    csvelement = tableCell.cells[1].innerText
+    resolution = tableCell[0]
+    dataname = tableCell[4]
+    datafile = tableCell[3]
+    organization = tableCell[5]
+    ixp = tableCell[6]
+    csvelement = tableCell[1]
 
-    // organizationproper = ixp.replace(/\./gi, "").replace(/ /gi, "_")
+    organizationproper = organization.replace(/\./gi, "").replace(/ /gi, "_")
     // ixpproper = ixp.replace(/\./gi, "").replace(/ /gi, "_")
-    // datafilepoper = datafilepoper.replace(/\./gi, "").replace(/ /gi, "_")
+    datanamepoper = dataname.replace(/\./gi, "").replace(/ /gi, "_")
 
-    var $BOX_PANEL = $("#" + dataname).closest('.closable');
+    var $BOX_PANEL = $("#" + datanamepoper).closest('.closable');
     $BOX_PANEL.remove();
     $.ajax({
         url: "./app/html/templatepreview.html",
@@ -256,12 +391,14 @@ function previewdata(tableCell) {
             //Render the data into the template
             var rendered = Mustache.render(template, {
                 dataname: dataname,
+                datanamepoper: datanamepoper,
                 orgapropername: organizationproper,
                 folder: outfolder,
                 ixpname: ixp,
-                ixppropername: ixpproper
+                ixppropername: ixpproper,
+                csvelement: csvelement
             });
-            $("#ixpinfo").before(rendered);
+            $("#preview").before(rendered);
         },
         dataType: "text",
         complete: function () {
@@ -295,7 +432,7 @@ function previewdata(tableCell) {
 
 
     // Line chart
-    var ctx = document.getElementById(dataname);
+    var ctx = document.getElementById(datanamepoper);
     var lineChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -312,6 +449,6 @@ function previewdata(tableCell) {
                 data: datas
             }]
         },
-        options: { elements: { point: { radius: 0 } } }
+        options: {elements: {point: {radius: 0}}}
     });
 }
