@@ -20,3 +20,12 @@ path[stroke="chartreuse"] {
         stroke-dashoffset: 100;
     }
 }
+
+/*div.container {*/
+    /*width: 80%;*/
+/*}*/
+
+.size3:nth-child(4n+3) {clear: left;}
+.size0:nth-child(4n+0) {clear: left;}
+.size1:nth-child(4n+1) {clear: left;}
+.dataTables_filter {width: 100%;}

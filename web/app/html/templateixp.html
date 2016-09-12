@@ -1,4 +1,4 @@
-<div class="col-md-3 col-sm-12 col-xs-12 closable">
+<div class="col-md-3 col-sm-12 col-xs-12 closable size0">
     <div class="x_panel">
         <div class="x_title">
             <h2>IXP of {{ixpname}}</h2>
@@ -16,23 +16,25 @@
         </div>
         <div class="x_content">
             <thead>
-            <img width="100%" src="{{folder}}{{organname}}/{{ixpname}}.svg">
-            <table class="table table-hover" id="{{orgapropername}}{{ixppropername}}" style="cursor: pointer;">
-                <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Resolution</th>
-                    <th></th>
-                </tr>
-                </thead>
-                <tbody>
-                <!--put one to keep visual effect-->
-                <tr>
-                    <th></th>
-                    <td></td>
-                    <td></td>
-                </tr>
-                </tbody>
+            <!--<img width="100%" src="{{folder}}{{organname}}/{{ixpname}}.svg">-->
+            <canvas id="{{orgapropername}}{{ixppropername}}-pie" width="100%" />
+
+            <table width="100%" class="table table-hover display" cellspacing="0" id="{{orgapropername}}{{ixppropername}}" name="{{orgapropername}}{{ixppropername}}" style="cursor: pointer; ">
+                <!--<thead>-->
+                <!--<tr>-->
+                    <!--<th>Name</th>-->
+                    <!--<th>Resolution</th>-->
+                    <!--<th></th>-->
+                <!--</tr>-->
+                <!--</thead>-->
+                <!--<tbody>-->
+                <!--&lt;!&ndash;put one to keep visual effect&ndash;&gt;-->
+                <!--<tr>-->
+                    <!--<th></th>-->
+                    <!--<td></td>-->
+                    <!--<td></td>-->
+                <!--</tr>-->
+                <!--</tbody>-->
             </table>
             </thead>
         </div>
