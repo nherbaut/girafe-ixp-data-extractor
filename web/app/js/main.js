@@ -8,7 +8,7 @@ var urlVideoSD = "http://localhost:9003/cdnld.mpd";
 var urlVideoHD = "http://localhost:9003/cdnhd.mpd";
 var urlMPD = "/api/simu/mpd/";
 var DATA = {};
-var TABLE={}
+var TABLE = {}
 
 var dataIXPs = []
 $.ajax({
@@ -173,7 +173,7 @@ function loadOrganization(tableCell) {
     });
 
     $('#' + propername).on('click', 'tr', function () {
-        var data = TABLE[this.offsetParent.id].row( this ).data();
+        var data = TABLE[this.offsetParent.id].row(this).data();
         loadixp(data);
     });
 
@@ -182,7 +182,7 @@ function loadOrganization(tableCell) {
 
 function loadixp(tableCell) {
 
-        tableCell.forEach(function (element, index) {
+    tableCell.forEach(function (element, index) {
         var div = document.createElement("div");
         div.innerHTML = element;
         // var text = div.textContent || div.innerText || "";
@@ -193,7 +193,7 @@ function loadixp(tableCell) {
     ixp = tableCell[0]
     iddown = tableCell[4]
 
-    console.log(Organization + " " + ixp)
+    // console.log(Organization + " " + ixp)
     organizationproper = organization.replace(/\./gi, "").replace(/ /gi, "_")
     ixpproper = ixp.replace(/\./gi, "").replace(/ /gi, "_")
     var $BOX_PANEL = $("#" + organizationproper + ixpproper).closest('.closable');
@@ -222,12 +222,12 @@ function loadixp(tableCell) {
 
     datacontent = [0, 0];
     dataname = ["Other", "Other Content"];
-    datacolor = ["E5E5E5", "#6495ED"];
+    datacolor = ["#E5E5E5", "#6495ED"];
 
     DATA[Organization]["ixplist"][ixp].forEach(function (asn) {
         if (asn != "") {
             if (asn[2] == "Content") {
-                if (parseInt(asn[1]) > (DATA[Organization]["ixplist"][ixp]["contentBW"] / 10)) {
+                if (parseInt(asn[1]) > (DATA[Organization]["ixplist"][ixp]["contentBW"] / 20)) {
                     datacontent.push(asn[1]);
                     dataname.push(asn[0]);
                     datacolor.push(randomColor(0.7))
@@ -240,7 +240,10 @@ function loadixp(tableCell) {
                 datacontent[0] = datacontent[0] + parseInt(asn[1]);
             }
         }
-    })
+    });
+
+
+
     var config = {
         type: 'pie',
         data: {
@@ -251,7 +254,15 @@ function loadixp(tableCell) {
             labels: dataname
         },
         options: {
-            responsive: true
+            responsive: true,
+            tooltipEvents: [],
+            legend: { position: 'bottom', },
+            // showTooltips: false,
+            // onAnimationComplete: function () {
+            //     this.showTooltip(this.segments, true);
+            // },
+            // tooltipTemplate: "<%= label %> - <%= value %>%"
+
         }
     };
     var ctx = document.getElementById(organizationproper + ixpproper + "-pie").getContext("2d");
@@ -301,7 +312,7 @@ function loadixp(tableCell) {
     // table.deleteRow(table.children[1].children.length)
 
 
-     TABLE[organizationproper + ixpproper]= $('#' + organizationproper + ixpproper).DataTable({
+    TABLE[organizationproper + ixpproper] = $('#' + organizationproper + ixpproper).DataTable({
         data: DATA[Organization]["ixplist"][ixp]["Table"],
         columns: [
             {title: "Name"},
@@ -351,15 +362,15 @@ function loadixp(tableCell) {
     });
 
     $('#' + organizationproper + ixpproper).on('click', 'tr', function () {
-        var data = TABLE[this.offsetParent.id].row( this ).data();
+        var data = TABLE[this.offsetParent.id].row(this).data();
         previewdata(data);
-        
+
     });
 
 
 }
 function previewdata(tableCell) {
-    console.log(tableCell)
+    // console.log(tableCell)
     tableCell.forEach(function (element, index) {
         var div = document.createElement("div");
         div.innerHTML = element;
