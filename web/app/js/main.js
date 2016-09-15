@@ -219,12 +219,25 @@ function loadixp(tableCell) {
             refresh();
         }
     });
+    TEMPCONTENT={}
+    DATA[Organization]["ixplist"][ixp].forEach(function (asn) {
+        if (asn != "") {
+            if (!TEMPCONTENT[asn[0]]){
+                TEMPCONTENT[asn[0]]=[]
+                TEMPCONTENT[asn[0]][0]=asn[0]
+                TEMPCONTENT[asn[0]][1]=0
+                TEMPCONTENT[asn[0]][2]=asn[2]
+            }
+            TEMPCONTENT[asn[0]][1]+=parseInt(asn[1])
+        }
+    })
 
     datacontent = [0, 0];
     dataname = ["Other", "Other Content"];
     datacolor = ["#E5E5E5", "#6495ED"];
-
-    DATA[Organization]["ixplist"][ixp].forEach(function (asn) {
+    for(var index in TEMPCONTENT) { 
+       asn= TEMPCONTENT[index]; 
+    
         if (asn != "") {
             if (asn[2] == "Content") {
                 if (parseInt(asn[1]) > (DATA[Organization]["ixplist"][ixp]["contentBW"] / 20)) {
@@ -240,8 +253,7 @@ function loadixp(tableCell) {
                 datacontent[0] = datacontent[0] + parseInt(asn[1]);
             }
         }
-    });
-
+    };
 
 
     var config = {
@@ -256,7 +268,7 @@ function loadixp(tableCell) {
         options: {
             responsive: true,
             tooltipEvents: [],
-            legend: { position: 'bottom', },
+            legend: {position: 'bottom',},
             // showTooltips: false,
             // onAnimationComplete: function () {
             //     this.showTooltip(this.segments, true);
