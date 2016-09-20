@@ -1,0 +1,5 @@
+ecix-daily_ber_5T.csvx
+ecix-daily_dus_5T.csvx
+ecix-daily_fra_5T.csvx
+ecix-daily_ham_5T.csvx
+ecix-daily_muc_5T.csvx

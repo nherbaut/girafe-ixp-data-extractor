@@ -4,6 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 #rm $DIR/*.csvx 2> /dev/null
 #echo -e "\e[32mGet list of IXP\e[39m"
 #cat $1 |sed -rn 's/^(.*),(.*),(.*)$/\1/p'
+DATE=$(date "+%Y-%m-%dT%H:%M:%S")
 
 echo -e "\e[32mfor each config key"
 for t in `cat $1 |sed -rn 's/^(.*),(.*),(.*)$/\2/p'`; do
@@ -15,8 +16,8 @@ for t in `cat $1 |sed -rn 's/^(.*),(.*),(.*)$/\2/p'`; do
    if [ -z "$2" ] ;then
       $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}.temp" $2 $3
    else
-      $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}-$(date "+%Y-%m-%dT%H:%M:%S").temp" $2 $3
-      cp "${DIROUT}/out/${org}/${name}-$(date "+%Y-%m-%dT%H:%M:%S").temp" "${DIROUT}/out/${org}/${name}.temp"
+      $DIR/ixp-asm-extractor.py --ixp ${t} --out "${DIROUT}/out/${org}/${name}.svg" --cache-file "${DIROUT}/out/${org}/${name}-$DATE.temp" $2 $3
+      cp "${DIROUT}/out/${org}/${name}-$DATE.temp" "${DIROUT}/out/${org}/${name}.temp"
    fi
    echo -e "\e[32mFinish for $name \e[39m"
 done
