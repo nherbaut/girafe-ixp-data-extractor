@@ -21,6 +21,8 @@ for value in `cat $1`;do
         try=$[$try+1]
         if  [ $try -ge $maxloop ]; then
             echo -e "\e[91mcan not get the file now\e[39m"
+            curl --get "https://smsapi.free-mobile.fr/sendmsg" --data "user=23122068" --data "pass=XsMJyZrJ0WF8OF" --data "msg=Error can not get LINX" -v
+
             break
         fi
     done
