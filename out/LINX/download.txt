@@ -1,0 +1,12 @@
+linx-monthly_car1_1H.csvx
+linx-monthly_lon1_1H.csvx
+linx-monthly_lon2_1H.csvx
+linx-monthly_man1_1H.csvx
+linx-monthly_nva1_1H.csvx
+linx-monthly_sco1_1H.csvx
+linx-weekly_car1_1H.csvx
+linx-weekly_lon1_1H.csvx
+linx-weekly_lon2_1H.csvx
+linx-weekly_man1_1H.csvx
+linx-weekly_nva1_1H.csvx
+linx-weekly_sco1_1H.csvx
