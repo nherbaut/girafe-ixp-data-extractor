@@ -3,10 +3,6 @@ var targetfolder = "./target/";
 var outfolder = "../out/";
 var infolder = "../in/";
 var targetfile = targetfolder + "target.csv";
-var urlVideo = "http://localhost:9002/cdn.mpd";
-var urlVideoSD = "http://localhost:9003/cdnld.mpd";
-var urlVideoHD = "http://localhost:9003/cdnhd.mpd";
-var urlMPD = "/api/simu/mpd/";
 var DATA = {};
 var TABLE = {}
 
@@ -72,7 +68,7 @@ function loadOrganization(tableCell) {
 
     if (!DATA[Organization]["ixplist"]) {
         $.ajax({
-            url: infolder + Organization + "/ixplist.csv",
+            url: outfolder + Organization + "/ixplist.csv",
             async: false,
             success: function (csvd) {
                 DATA[Organization]["ixplist"] = $.csv.toArrays(csvd);
