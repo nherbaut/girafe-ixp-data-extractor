@@ -10,3 +10,5 @@ for t in `ls $DIR/in`; do
 	fi
 
 done
+
+./downloadablefile.sh
