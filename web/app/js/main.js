@@ -1,7 +1,7 @@
 var timeFormat = 'MM/DD/YYYY HH:mm';
 var targetfolder = "./target/";
-var outfolder = "../out/";
-var infolder = "../in/";
+var outfolder = "./out/";
+// var infolder = "../in/";
 var targetfile = targetfolder + "target.csv";
 var DATA = {};
 var TABLE = {}
