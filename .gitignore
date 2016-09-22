@@ -5,7 +5,8 @@
 *.csvx
 
 *.svg
-
+out/
+*.orig
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
