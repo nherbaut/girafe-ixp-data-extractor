@@ -9,3 +9,4 @@ done
 
 ./ixp.sh
 
+./downloadablefile.sh
