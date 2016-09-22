@@ -12,7 +12,7 @@ if [[ $# -eq 0 ]]; then
 else
     $*
     if [ -d "/root/tohost/" ]; then 
-		cp -r /root/girafe-ixp-data-extractor/out /root/tohost/girafe-ixp-data-extractor/
+		cp -r /root/girafe-ixp-data-extractor/ /root/tohost/
     fi
 fi
 
