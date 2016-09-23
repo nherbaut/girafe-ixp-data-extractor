@@ -6,6 +6,7 @@ echo -e "\e[32mremoving old csvx file\e[39m"
 rm $DIROUT/*.csvx 2> /dev/null
 echo -e "\e[32mdownloading new json files\e[39m"
 date=$(date "+%Y-%m-%dT%H:%M:%S")
+SMS=0
 IFS=$'\n'
 minimumsize=200
 maxloop=10
@@ -21,14 +22,16 @@ for value in `cat $1`;do
         try=$[$try+1]
         if  [ $try -ge $maxloop ]; then
             echo -e "\e[91mcan not get the file now\e[39m"
-            curl --get "https://smsapi.free-mobile.fr/sendmsg" --data "user=23122068" --data "pass=XsMJyZrJ0WF8OF" --data "msg=Error can not get LINX" -v
-
+            SMS=1
             break
         fi
     done
 
 done
 unset IFS
+if [ "$SMS" -eq 1 ]
+  curl --get "https://smsapi.free-mobile.fr/sendmsg" --data "user=23122068" --data "pass=XsMJyZrJ0WF8OF" --data "msg=Error can not get LINX" -v
+fi
 
 #cat $1 |sed -rn 's/^(.*),(.*),(.*),(.*)$/wget --no-check-certificate "\2" -O $DIROUT\/\1--$(date "+%Y-%m-%dT%H:%M:%S").json /p' | source /dev/stdin
 
