@@ -5,7 +5,6 @@
 *.csvx
 
 *.svg
-out/
 *.orig
 
 ### Python ###
