@@ -4,7 +4,7 @@ DIROUT=$(echo $DIR | sed 's/\/in/\/out/')
 mkdir -p $DIROUT
 echo -e "\e[32mremoving old csvx file\e[39m"
 rm $DIROUT/*.csvx 2> /dev/null
-echo -e "\e[32mdownloading new json files\e[39m"
+echo -e "\e[32mdownloading new png files\e[39m"
 date=$(date "+%Y-%m-%dT%H:%M:%S")
 IFS=$'\n'
 SMS=0
@@ -12,12 +12,12 @@ minimumsize=200
 maxloop=10
 for value in `cat $1`;do
 
-    echo wget --no-check-certificate $(echo $value | tr "," "\n" | sed -n 2p) -O $DIROUT\/$(echo $value | tr "," "\n" | sed -n 1p)--$date.json | source /dev/stdin
+    echo wget --no-check-certificate $(echo $value | tr "," "\n" | sed -n 2p) -O $DIROUT\/$(echo $value | tr "," "\n" | sed -n 1p)--$date.png | source /dev/stdin
     actualsize=$(wc -c < $DIROUT\/$(echo $value | tr ',' '\n' | sed -n 1p)--$date.png )
     try=0
     while [ $minimumsize -ge $actualsize ];do
         echo -e "\e[93mfile empty restart\e[39m"
-        echo wget --no-check-certificate $(echo $value | tr "," "\n" | sed -n 2p) -O $DIROUT\/$(echo $value | tr "," "\n" | sed -n 1p)--$date.json | source /dev/stdin
+        echo wget --no-check-certificate $(echo $value | tr "," "\n" | sed -n 2p) -O $DIROUT\/$(echo $value | tr "," "\n" | sed -n 1p)--$date.png | source /dev/stdin
         actualsize=$(wc -c < $DIROUT\/$(echo $value | tr ',' '\n' | sed -n 1p)--$date.png )
         try=$[$try+1]
         if  [ $try -ge $maxloop ]; then
