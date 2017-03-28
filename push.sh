@@ -10,3 +10,8 @@ git commit -a -m "save of $(date)"
 git tag  "$date"
 git push origin $date
 git push origin withdata
+<<<<<<< HEAD
+=======
+git pull --depth 1
+git gc
+>>>>>>> 1239cf13c5a051a54c14299f2b8b8fc79bc3abf7

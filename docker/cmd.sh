@@ -5,6 +5,7 @@ chmod 600 /root/.ssh/id_rsa
 ssh-keyscan -t rsa github.com > ~/.ssh/known_hosts
 git clone --depth=1 -b withdata git@github.com:dngroup/girafe-ixp-data-extractor.git
 cd girafe-ixp-data-extractor
+git gc
 find ./ -name "*.sh" -exec chmod +x {} \;
 find ./ -name "*.py" -exec chmod +x {} \;
 if [[ $# -eq 0 ]]; then
