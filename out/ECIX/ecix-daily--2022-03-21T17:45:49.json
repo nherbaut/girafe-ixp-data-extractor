@@ -1,0 +1,1159 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="google-site-verification" content="GQXwm9_XKZISUMW1JB2B5Cqq5QGqwx9f7AVHF5AF5Wg" />
+  <!-- Google fonts - Muli-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
+  <script type="text/javascript">
+  //uncomment and change this to false if you're having trouble with WOFFs
+  // var woffEnabled = true;
+  //to place your webfonts in a custom directory
+  //uncomment this and set it to where your webfonts are.
+  var customPath = "https://s37613.pcdn.co/wp-content/themes/megaport/resources/assets/fonts";
+  </script>
+
+  <!-- 2022 JAN Geotargetly -->
+  <script>
+  (function(g,e,o,t,a,r,ge,tl,y,s){
+  t=g.getElementsByTagName(e)[0];y=g.createElement(e);y.async=true;
+  y.src='https://g9508048080.co/gr?id=-Lu4rDtw7jOGStU57wjq&refurl='+g.referrer+'&winurl='+encodeURIComponent(window.location);
+  t.parentNode.insertBefore(y,t);
+  })(document,'script');
+  </script>
+  <!-- End of New Geotargetly -->
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TTXXGC');</script>
+  <!-- End Google Tag Manager -->
+  <title>MegaIX &#x2d; Peering and Internet Exchange | Megaport</title>
+<link rel="alternate" hreflang="en" href="https://www.megaport.com/services/internet-exchange/" />
+<link rel="alternate" hreflang="fr" href="https://www.megaport.com/fr/services/internet-exchange/" />
+<link rel="alternate" hreflang="de" href="https://www.megaport.com/de/services/internet-exchange/" />
+<link rel="alternate" hreflang="ja" href="https://www.megaport.com/ja/services/internet-exchange/" />
+<link rel="alternate" hreflang="es" href="https://www.megaport.com/es/services/internet-exchange/" />
+
+<!-- The SEO Framework by Sybre Waaijer -->
+<meta name="description" content="Share and source traffic globally with some of the most connected networks in the world by peering across Megaport&#8217;s Internet Exchange, MegaIX and ECIX." />
+<meta property="og:image" content="https://s37613.pcdn.co/wp-content/uploads/2020/07/megaportcom.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+<meta property="og:image:alt" content="Megaport" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="MegaIX &#x2d; Peering and Internet Exchange | Megaport" />
+<meta property="og:description" content="Share and source traffic globally with some of the most connected networks in the world by peering across Megaport&#8217;s Internet Exchange, MegaIX and ECIX." />
+<meta property="og:url" content="https://www.megaport.com/services/internet-exchange/" />
+<meta property="og:site_name" content="Megaport" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MegaIX &#x2d; Peering and Internet Exchange | Megaport" />
+<meta name="twitter:description" content="Share and source traffic globally with some of the most connected networks in the world by peering across Megaport&#8217;s Internet Exchange, MegaIX and ECIX." />
+<meta name="twitter:image" content="https://s37613.pcdn.co/wp-content/uploads/2020/07/megaportcom.png" />
+<meta name="twitter:image:width" content="1200" />
+<meta name="twitter:image:height" content="627" />
+<meta name="twitter:image:alt" content="Megaport" />
+<link rel="canonical" href="https://www.megaport.com/services/internet-exchange/" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.megaport.com/","name":"Megaport | Cloud Interconnectivity Simplified"}},{"@type":"ListItem","position":2,"item":{"@id":"https://www.megaport.com/services/","name":"Services"}},{"@type":"ListItem","position":3,"item":{"@id":"https://www.megaport.com/services/internet-exchange/","name":"MegaIX &#8211; Peering and Internet Exchange"}}]}</script>
+<!-- / The SEO Framework by Sybre Waaijer | 4.43ms meta | 0.85ms boot -->
+
+<link rel='dns-prefetch' href='//code.jquery.com' />
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-includes/css/dist/block-library/style.min.css?ver=5.7.6">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/plugins/responsive-lightbox/assets/tosrus/jquery.tosrus.min.css?ver=2.3.5">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=3.2.9">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=3.2.9">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=5.7.6">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-vertical/style.min.css?ver=1">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/themes/megaport/dist/styles/main_aeda515c.css">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/themes/megaport/dist/styles/paperkit_aeda515c.css?ver=5.7.6">
+<link rel="stylesheet" href="https://s37613.pcdn.co/wp-content/themes/megaport/dist/styles/navigation-master_aeda515c.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" id="jquery-js"></script>
+<script>(window.jQuery && jQuery.noConflict()) || document.write('<script src="https://s37613.pcdn.co/wp-includes/js/jquery/jquery.js"><\/script>')</script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/wp-konami-code/js/konami/konami.min.js?ver=1.4.2" id="konami-js-js"></script>
+<script type='text/javascript' id='wp-konami-code-js-extra'>
+/* <![CDATA[ */
+var wp_konami_code_js_local = {"wp_konami_code_page":"http:\/\/www.megaport.com\/snake\/"};
+/* ]]> */
+</script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/wp-konami-code/js/wp-konami-code.js?ver=1.0.0" id="wp-konami-code-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/responsive-lightbox/assets/tosrus/jquery.tosrus.min.js?ver=2.3.5" id="responsive-lightbox-tosrus-js"></script>
+<script src="https://s37613.pcdn.co/wp-includes/js/underscore.min.js?ver=1.8.3" id="underscore-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/responsive-lightbox/assets/infinitescroll/infinite-scroll.pkgd.min.js?ver=5.7.6" id="responsive-lightbox-infinite-scroll-js"></script>
+<script type='text/javascript' id='responsive-lightbox-js-extra'>
+/* <![CDATA[ */
+var rlArgs = {"script":"tosrus","selector":"lightbox","customEvents":"","activeGalleries":"1","effect":"slide","infinite":"1","keys":"1","autoplay":"0","pauseOnHover":"1","timeout":"4000","pagination":"1","paginationType":"bullets","closeOnClick":"1","woocommerce_gallery":"0","ajaxurl":"https:\/\/www.megaport.com\/wp-admin\/admin-ajax.php","nonce":"d7497bcfd4","preview":"false","postId":"10618"};
+/* ]]> */
+</script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/responsive-lightbox/js/front.js?ver=2.3.5" id="responsive-lightbox-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/svg-support/js/min/svgs-inline-min.js?ver=1.0.0" id="bodhi_svg_inline-js"></script>
+<script id="bodhi_svg_inline-js-after">
+cssTarget="img.style-svg";ForceInlineSVGActive="false";
+</script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=5.7.6" id="ppress-flatpickr-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=5.7.6" id="ppress-select2-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/themes/megaport/dist/scripts/sticky-sidebar_aeda515c.js?ver=1" id="sage/sticky-sidebar.js-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/themes/megaport/dist/scripts/dinroundpro_aeda515c.js?ver=1" id="sage/dinroundpro.js-js"></script>
+<meta name="generator" content="WPML ver:4.4.10 stt:1,4,3,28,2;" />
+<link rel="icon" href="https://s37613.pcdn.co/wp-content/uploads/2019/01/cropped-MP-Logo-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://s37613.pcdn.co/wp-content/uploads/2019/01/cropped-MP-Logo-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://s37613.pcdn.co/wp-content/uploads/2019/01/cropped-MP-Logo-300x300.png" />
+<meta name="msapplication-TileImage" content="https://s37613.pcdn.co/wp-content/uploads/2019/01/cropped-MP-Logo-300x300.png" />
+		<style type="text/css" id="wp-custom-css">
+			.mp-img-border {
+   border-style: solid;
+   border-width: 1px;
+   border-color: #ccc;
+}
+
+.mp-img-border-radius {
+   border-style: solid;
+   border-width: 1px;
+   border-color: #ccc;
+	 border-radius: 12px;
+}
+
+.eco_table { width: 100%; }
+.eco_td { width: 33%; text-align: center; height: 100px; border-bottom: 1px solid #eee; } 
+.eco_td img { max-height: 72px; width: auto; }
+.eco_td1 { text-align: center; border-bottom: 1px solid #ddd; height: 110px; }
+.eco_td2 { text-align: left; border-bottom: 1px solid #ddd; height: 110px; width: 54%; padding: 12px 0; }
+.eco_td1, .eco_td3 { width: 28%; }
+.eco_td1 img { max-height: 72px; width: auto; }
+.eco_td3 { text-align: center; border-bottom: 1px solid #ddd; height: 110px; }
+
+.eco_td3 div a { display: block; width: 100%; }
+
+
+.wp-block-table table tr td { line-height: 34px !important; }
+ .wp-block-table table tr td { height: 34px !important; }
+
+/*
+.mp_eco_table table tr { height: 20px !important; }
+*/
+
+.mp_h2, .mp_h3, .mp_h4 {
+	padding-top: 18px;
+	padding-bottom: 10px;
+}
+
+.mp_spacer {
+	padding: 18px 0;
+}
+
+.mp_fl {
+	float: left;
+}
+
+.mp_fr {
+	float: right;
+}
+
+.mp_font {
+	font-size: 17px !important;
+}
+
+.mp_font18 {
+	font-size: 18px !important;
+}
+
+.mp_font20 {
+	font-size: 20px !important;
+}
+
+.mp_box {
+	border: 1px solid #ddd;
+	border-radius: 12px;
+	padding: 12px;
+	margin: 64px 44px;
+}
+
+#content ol>li {
+    font-size: 17px;
+    line-height: 32px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 92%;
+}
+
+.mp_hook {
+	font-size: 26px !important;
+	padding: 16px 0 !important;
+	line-height: 1.6 !important;
+	font-style: italic !important;
+}
+
+/* Make YouTube videos inserted via WordPress oEmbed full-width */
+
+.wp-block-embed-youtube {
+	overflow: hidden;
+	position: relative;
+	max-width: 100%;
+	height: auto;
+	padding-bottom: 56.25%;
+}
+
+.wp-block-embed-youtube iframe,
+.wp-block-embed-youtube object,
+.wp-block-embed-youtube embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+article .badge.cat a,
+.card-blog .badge.cat a {
+  color: #414141;
+  font-size: 1em;
+  padding: 5px 0 .4em;
+  font-family: Montserrat,Helvetica,Arial,sans-serif;
+	font-weight:500;
+}
+
+article .badge.tag a {
+  color: white;
+	font-weight:500;
+	font-size: 1em;
+	padding: 5px 0 .4em;
+	font-family: Montserrat,Helvetica,Arial,sans-serif;
+}
+
+.avatar {
+	margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 50%!important;
+  max-width: 100%;
+}
+
+.card-blog .author .avatar {
+	display:inline-block;
+}
+
+.dropdown-menu .dropdown-item {
+	position: relative;
+}
+.dropdown-menu .dropdown-item.menu-icon-big {
+	padding-left: 70px;
+}
+
+.dropdown-menu .dropdown-item.menu-icon-small {
+	
+}
+
+.dropdown-menu .dropdown-item.menu-icon-big svg {
+	position: absolute;
+	width: auto;
+	max-width: 35px;
+	height: auto;
+	max-height: 28px;
+	bottom: 5px;
+	left: 25px;
+	fill: #022144;
+	top:50%;
+	margin-top:-14px;
+}
+
+.dropdown-menu .dropdown-item.menu-icon-big .sub {
+	font-size: 11px;
+	padding: 0px;
+	color: #697A89;
+}
+
+.dropdown-menu .dropdown-item.menu-icon-small svg {
+	position: relative;
+  width: auto;
+  max-width: 35px;
+  height: auto;
+  max-height: 18px;
+  margin-right: 10px;
+	top: 3px;
+	stroke: #022144;
+  overflow: visible;
+}		</style>
+		  <link type="text/css" href="https://s37613.pcdn.co/wp-content/themes/megaport/resources/assets/styles/mkto-megaport-styles.css" rel="stylesheet">
+  <link href="https://media.megaport.com/widgets/megaport-widgets.css" rel="stylesheet">
+</head>
+  <body class="page page-id-10618 page-child parent-pageid-7954  app-data index-data singular-data page-data page-10618-data page-internet-exchange-data">
+        <header class="cd-auto-hide-header">
+		<nav class="cd-primary-nav d-flex bg-light justify-content-end align-items-center">
+									<ul class="nav top-links navbar-expand-lg">
+				<li class="nav-item search" id="nav-menu-item-search">
+					<button href="#" type="button" class="btn-link search-trigger fs_nav-search">
+						<i class="fal fa-search lead"></i>
+					</button>
+					<div class="mgp-search-wrap searchHidden" id="ajax_search_container">
+						<form id="ajax_searchform" action="https://www.megaport.com/" data-context="">
+							<input name="s" class="ajax_s form-control" autocomplete="off" type="text" value="" placeholder="Start typing to search...">
+							<span class="mgp-ajax-search-loading"><i class="icon-spin6 animate-spin fal fa-spinner"></i></span>
+						</form>
+						<div class="mgp_ajax_results"></div>
+					</div>
+				</li>
+				<li class="nav-item d-flex top_nav_bar">	
+											<ul id="menu-top-navigation" class="menu"><li class="menu-item menu-careers"><a href="https://www.megaport.com/careers/">Careers</a></li>
+<li class="menu-item menu-sales"><a href="https://www.megaport.com/contact/sales/">Sales</a></li>
+<li class="menu-item menu-support"><a href="https://www.megaport.com/contact/support/">Support</a></li>
+<li class="menu-item menu-log-in"><a href="https://portal.megaport.com/login">Log in</a></li>
+</ul>
+									</li>
+
+				<!-- Language Switcher -->
+				<li class="has-submenu d-flex align-items-center language-switcher">
+					<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<i class="fal fa-globe"></i>
+					</a>
+					<div id="flags_language_selector" class="dropdown-menu" role="menu">
+						<div id="top_nav_language_list"><ul class="pl-0 py-3 d-flex flex-column align-items-center"><li classs="dropdown-item menu-item mp-langSelector lang-switch-item-fr"><a href="https://www.megaport.com/fr/services/internet-exchange/" data-lang="fr">Français</a></li><li classs="dropdown-item menu-item mp-langSelector lang-switch-item-de"><a href="https://www.megaport.com/de/services/internet-exchange/" data-lang="de">Deutsch</a></li><li classs="dropdown-item menu-item mp-langSelector lang-switch-item-ja"><a href="https://www.megaport.com/ja/services/internet-exchange/" data-lang="ja">日本語</a></li><li classs="dropdown-item menu-item mp-langSelector lang-switch-item-es"><a href="https://www.megaport.com/es/services/internet-exchange/" data-lang="es">Español</a></li></ul></div>					</div>
+				</li>
+
+			</ul>
+		</nav> <!-- .cd-primary-nav -->
+
+		<script>
+		// Language cookie selection
+		/**
+		 * Listen for language selector click events
+		 * Handles storing language selection
+		 * Ensure your links have a data-lang attribute.  e.g. <a href="" data-lang="ja">
+		 */
+		document.querySelectorAll(".mp-langSelector").forEach((el) => {
+			el.addEventListener("click", (event) => {
+				// event.preventDefault();
+				const selectedLang = event.target.getAttribute("data-lang");
+				// const href = event.target.href;
+				setLocalStorage(selectedLang);
+				// document.location.replace(href);
+			});
+		});
+		/**
+		 * Set the language as a cookie/localStorage
+		 * Cookies are primary source
+		 * @param  {string} lang Selected language abbreviation
+		 */
+		function setLocalStorage(lang) {
+			const domain = document.location.hostname.includes("megaport")
+				? "megaport.com"
+				: document.location.hostname;
+			document.cookie = `mp_lang=${lang}; domain=${domain}; path=/;`;
+		}
+		/**
+		 * Get the language from cookie/localStorage
+		 * @returns  The selected language abbreviation
+		 */
+		function getLocalStorage() {
+			const cookies = new URLSearchParams(document.cookie.replace(/; /g, "&"));
+			return cookies.has("mp_lang") ? cookies.get("mp_lang") : "en";
+		}
+		</script>
+
+		<!-- style for top nav -->
+		<style type="text/css">
+			.top_nav_bar ul{
+				display: flex;
+				flex-direction: row;
+				list-style-type: none;
+				padding-left:0;
+			}
+
+			.top_nav_bar ul li{
+				padding: 0.5rem 1rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				
+			}
+
+			.top_nav_bar ul li a{
+				font-weight: 600;
+			}
+			
+			#top_nav_language_list li{
+				list-style-type: none;
+				font-weight: 600;
+				font-size: 12.8px;
+			}
+			
+			/* mobile styling for top nav*/
+			@media  only screen and (max-width: 650px) {
+				.top_nav_bar ul li{
+					padding: 0.5rem;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+
+				#nav-menu-item-search{
+					margin-right:0;
+				}
+
+				.language-switcher a{
+					padding:0.5rem!important;
+				}
+			}
+		</style>
+
+
+			<nav id="global-nav" class="cd-secondary-nav navbar px-3 navbar-expand-lg">
+		<a class="navbar-brand brand" href="https://www.megaport.com/"><img src="https://s37613.pcdn.co/wp-content/themes/megaport/dist/images/megaport-logo-large_0ab06d71.png" width="150" alt="Megaport Logo" /></a>
+	<a data-target="#cd-navigation" href="#" class="nav-trigger">
+			<span>
+				 <em aria-hidden="true"></em>
+				 Menu
+			</span>
+	 </a> 
+	 <!-- .nav-trigger -->
+	<!-- Primary menu -->
+	<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul id="cd-navigation" class="navbar-nav ml-auto"><li class="nav-item nav-item-11093 dropdown menu-item menu-connect"><a title="Connect" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true">Connect</a>
+<div role="menu" class=" dropdown-menu">
+<a title="Alibaba Cloud" href="https://www.megaport.com/services/alibaba-cloud-express-connect/" class="dropdown-item menu-item menu-alibaba-cloud">Alibaba Cloud</a><a title="Amazon Web Services" href="https://www.megaport.com/services/amazon-web-services/" class="dropdown-item menu-item menu-amazon-web-services">Amazon Web Services</a><a title="Cloudflare Network Interconnect" href="https://www.megaport.com/services/cloudflare-network-interconnect/" class="dropdown-item menu-item menu-cloudflare-network-interconnect">Cloudflare Network Interconnect</a><a title="Google Cloud Platform" href="https://www.megaport.com/services/google-cloud-partner-interconnect/" class="dropdown-item menu-item menu-google-cloud-platform">Google Cloud Platform</a><a title="IBM Cloud" href="https://www.megaport.com/services/ibm-cloud/" class="dropdown-item menu-item menu-ibm-cloud">IBM Cloud</a><a title="Microsoft Azure" href="https://www.megaport.com/services/microsoft-expressroute/" class="dropdown-item menu-item menu-microsoft-azure">Microsoft Azure</a><a title="Oracle Cloud" href="https://www.megaport.com/services/oracle-cloud-fastconnect/" class="dropdown-item menu-item menu-oracle-cloud">Oracle Cloud</a><a title="OVHcloud" href="https://www.megaport.com/services/ovhcloud/" class="dropdown-item menu-item menu-ovhcloud">OVHcloud</a><a title="Nutanix Xi Cloud" href="https://www.megaport.com/services/nutanix-xi-cloud/" class="dropdown-item menu-item menu-nutanix-xi-cloud">Nutanix Xi Cloud</a><a title="Salesforce" href="https://www.megaport.com/services/salesforce-express-connect/" class="dropdown-item menu-item menu-salesforce">Salesforce</a><a title="SAP" href="https://www.megaport.com/services/sap-hana-cloud/" class="dropdown-item menu-item menu-sap">SAP</a></div>
+</li><li class="active nav-item nav-item-11092 dropdown menu-item menu-services"><a title="Services" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true">Services</a>
+<div role="menu" class=" dropdown-menu">
+<a title="Cloud Connectivity" href="https://www.megaport.com/services/cloud-connectivity/" class="dropdown-item menu-item menu-cloud-connectivity">Cloud Connectivity</a><a title="Megaport Virtual Edge (MVE)" href="https://www.megaport.com/services/megaport-virtual-edge/" class="dropdown-item menu-item menu-megaport-virtual-edge-mve">Megaport Virtual Edge (MVE)</a><a title="Megaport Cloud Router" href="https://www.megaport.com/services/megaport-cloud-router/" class="dropdown-item menu-item menu-megaport-cloud-router">Megaport Cloud Router</a><a title="Data Centre Interconnect" href="https://www.megaport.com/services/datacentre-interconnect/" class="dropdown-item menu-item menu-data-centre-interconnect">Data Centre Interconnect</a><a title="IX Peering" href="https://www.megaport.com/services/internet-exchange/" class="active active dropdown-item menu-item menu-ix-peering">IX Peering</a><a title="Megaport Marketplace" href="https://www.megaport.com/services/marketplace/" class="dropdown-item menu-item menu-megaport-marketplace">Megaport Marketplace</a></div>
+</li><li class="nav-item nav-item-23769 menu-item menu-partners"><a title="Partners" href="https://www.megaport.com/partners/" class="nav-link">Partners</a></li><li class="nav-item nav-item-11094 menu-item menu-locations"><a title="Locations" href="https://www.megaport.com/megaport-enabled-locations/" class="nav-link">Locations</a></li><li class="nav-item nav-item-11090 menu-item menu-pricing"><a title="Pricing" href="https://www.megaport.com/pricing/" class="nav-link">Pricing</a></li><li class="nav-item nav-item-12141 dropdown menu-item menu-resources"><a title="Resources" href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true">Resources</a>
+<div role="menu" class=" dropdown-menu">
+<a title="Resource Centre" href="https://www.megaport.com/resources/" class="dropdown-item menu-item menu-resource-centre">Resource Centre</a><a title="Blog" href="https://www.megaport.com/blog/" class="dropdown-item menu-item menu-blog">Blog</a><a title="Case Studies" href="https://www.megaport.com/resources/case-studies/" class="dropdown-item menu-item menu-case-studies">Case Studies</a><a title="Megaport Docs" href="https://docs.megaport.com" class="dropdown-item menu-item menu-megaport-docs">Megaport Docs</a><a title="Media Centre" href="https://www.megaport.com/media-centre/" class="dropdown-item menu-item menu-media-centre">Media Centre</a><a title="Investor Relations" href="https://www.megaport.com/investor/" class="dropdown-item menu-item menu-investor-relations">Investor Relations</a></div>
+</li><li class="nav-item nav-item-17453 menu-item menu-book-a-demo"><a title="Book a Demo" href="https://www.megaport.com/demo/" class="nav-link">Book a Demo</a></li></ul>
+			</div>
+	</nav><!-- .cd-secondary-nav -->
+</header> <!-- .cd-auto-hide-header -->
+
+<style type="text/css">
+	/* try megaport button */
+		#global-nav .navbar-nav .nav-item:last-child a{
+		display: inline-block;
+		box-sizing: border-box;
+		border-width: 2px;
+		font-size: 16px!important;
+		font-weight: 600!important;
+		padding: 8px 16px!important;
+		line-height: 1.25!important;
+		transition: all .15s linear;
+		background-color: #229df5;
+		border-color: #229df5;
+		color: #fff!important;
+		opacity: 1;
+		border-radius: 30px;
+	}
+
+	@media  only screen and (max-width: 992px){
+		.cd-auto-hide-header .collapse.navbar-collapse{
+			display:none!important;
+		}
+		.cd-auto-hide-header.nav-open .collapse.navbar-collapse{
+			display:block!important;
+		}
+	}	
+	
+	@media  only screen and (min-width: 992px){
+		.cd-auto-hide-header .nav-trigger {
+			display: none;
+		}
+		#cd-navigation{
+			align-items:center;
+		}
+	}
+
+	@media  only screen and (max-width: 650px) {
+		.nav.top-links{
+			padding-right:5px;
+		}
+		.top-links .nav-item a{
+			font-size:14px;
+		}
+		.top-links .nav-item{
+			padding:0!important;
+		}
+		.btn-link {
+			padding: 7px 12px!important;
+		}
+		.section{
+			padding: 40px 10px;
+		}
+	}
+
+	.cd-auto-hide-header{
+		position: relative!important;
+	}
+	
+	html, body {
+		max-width: 100%;
+		overflow-x: hidden;
+	}
+</style>    <div class="wrap" role="document">
+      <div class="content">
+        <main class="main">
+               <section id="blade_content" class="page-header page-header-small bg-gray" style=" background-size: contain;background-repeat: no-repeat;background-position: top right; ">
+<div class="content-center">
+    <div class="container text-dark text-left ">
+         <div class="row d-flex align-items-center">
+             <div class="col-lg-6 col-md-6 col-sm-10  text text-left">
+                <h1>Share and source traffic<span class="mpDot">.</span></h1>
+                <div class="page-intro mt-3">
+                <p class="lead"> Globally connected Internet Exchange   platforms for high-performance peering.</p>
+                </div>
+                <div class="py-4">
+                                  <div class="py-4">
+                                    <!-- button 1 -->
+                  <a href="/demo/" target="" class="btn btn-round btn-neutral btn-shadow mx-1">See a Demo</a>
+
+                  <!-- button 2 -->
+                  <a href="https://portal.megaport.com/register/" target="_blank" class="btn btn-round btn-primary btn-shadow mx-1">Create an Account</a>
+                  </div>
+                
+                </div>
+              </div>
+
+             <div class="col-lg-6 col-md-6 col-sm-12 d-none d-md-block">
+                <p><img loading="lazy" class="aligncenter size-large wp-image-14023" src="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXHero-1024x901.png" alt="" width="1024" height="901" srcset="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXHero-1024x901.png 1024w, /wp-content/uploads/2019/03/IXHero-300x264.png 300w, /wp-content/uploads/2019/03/IXHero-768x675.png 768w, /wp-content/uploads/2019/03/IXHero.png 1294w" sizes="(max-width: 1024px) 100vw, 1024px"></p>
+
+             </div>
+        </div>
+    </div>
+  </div>
+ </section>
+
+    <section class="section section-nude my-5 p-2">
+<div class="content-center">
+                                        <div class="container section">
+              <div id="Mega-IX" class="row d-flex align-items-center">
+                <div class="col-md-6">
+                  <p><img loading="lazy" class="img-fluid aligncenter wp-image-14025 size-full" src="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXGraphic2.png" alt="" width="1752" height="1263" srcset="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXGraphic2.png 1752w, /wp-content/uploads/2019/03/IXGraphic2-300x216.png 300w, /wp-content/uploads/2019/03/IXGraphic2-768x554.png 768w, /wp-content/uploads/2019/03/IXGraphic2-1024x738.png 1024w" sizes="(max-width: 1752px) 100vw, 1752px" /></p>
+
+              </div>
+
+                <div class="col-md-6 ml-auto">
+                  <h2>Bringing networks together</h2>
+<p><span style="font-weight: 400;">Joining our Internet Exchange, MegaIX and ECIX, gives you access to a shared distributed switching infrastructure that is capable of high-speed, reliable, and low-latency interconnection. </span></p>
+<p><span style="font-weight: 400;">Featuring a completely automated, software-driven signup and provisioning process from our web portal and API, MegaIX and ECIX allows us to deliver you faster activation and drive cost-effective peering. </span></p>
+<p><span style="font-weight: 400;">I</span><span style="font-weight: 400;">nstantly share and source traffic across local and international networks, scale your business to new markets, and have greater control over your interconnection.</span></p>
+<p> </p>
+<p><a class="btn btn-neutral border-dark btn-round" href="http://www.megaport.com/blog/internet-series-tubes-peering-megaix/">Read More</a></p>
+
+                </div>
+              </div>
+              </div>
+                      </div>
+</section>
+    <div class="section section-nude text-center bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2></h2>
+        </div>
+      </div>
+      <div class="row d-flex justify-content-center align-items-start">
+                              <div class="col-md-4 col-sm-12">
+            <div class="info ">
+                            <div class="icon mb-4">
+                <img class="img-fluid" style="max-width:160px;" src="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXicon1.png" alt="" />
+              </div>
+                            <div> <h4><a href="/services/internet-exchange/#connect-networks">Connected Networks</a></h4>
+</div>
+              <p><span style="font-weight: 400;">Explore the companies peering over our Internet Exchanges. Get to know the local and international service providers you can share data with.</span></p>
+
+            </div>
+        
+        </div>
+                          <div class="col-md-4 col-sm-12">
+            <div class="info ">
+                            <div class="icon mb-4">
+                <img class="img-fluid" style="max-width:160px;" src="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXicon2.png" alt="" />
+              </div>
+                            <div> <h4><a href="http://www.megaport.com/services/ix-statistics/">IX Locations</a></h4>
+</div>
+              <p><span style="font-weight: 400;">Check out the aggregate IP traffic of all MegaIX connected ports in the market in which they connect to the MegaIX platform.</span></p>
+
+            </div>
+        
+        </div>
+                          <div class="col-md-4 col-sm-12">
+            <div class="info ">
+                            <div class="icon mb-4">
+                <img class="img-fluid" style="max-width:160px;" src="https://s37613.pcdn.co/wp-content/uploads/2019/03/IXicon3.png" alt="" />
+              </div>
+                            <div> <h4><a href="https://lg.megaport.com">IX Looking Glass</a></h4>
+</div>
+              <p><span style="font-weight: 400;">View the essential routing information and network behaviour of companies sharing and sourcing traffic our Internet Exchanges.</span></p>
+
+            </div>
+        
+        </div>
+              </div>
+    </div>
+  </div>
+
+    <!-- Partner section -->
+        <div class="section mx-auto py-5">
+      <div class="container">
+        <h2 class="col-12 mx-auto text-center">Our Internet Exchange Partnerships</h3>
+        <p class="lead col-10 mx-auto text-center my-4">  Megaport has partnered with Amsterdam Internet Exchange (AMS-IX), Japan Network Access Point (JPNAP), Japan Internet Exchange(JPIX), and London Internet Exchange (LINX) to enable seamless connectivity to industry-leading Internet Exchanges. Peer from an existing Megaport Port regardless of where you’re located, whether on their network or elsewhere on ours.</p>
+        <div class="row d-flex justify-content-center col-12 mx-auto py-4" style="margin:auto!important;">
+                    <div class="col-6 col-lg-3 my-2">
+            <div class="info card">
+                          <a href="https://www.ams-ix.net/ams" target="_blank">
+                          <img class="img-fluid" alt="amsix_ix" src="https://s37613.pcdn.co/wp-content/uploads/2022/01/amsix_ix.png" style="max-width:18rem;"><small class="text-white pl-2"></small>
+                          </a>
+                        </div>
+          </div>
+                    <div class="col-6 col-lg-3 my-2">
+            <div class="info card">
+                          <a href="https://www.jpnap.net/" target="_blank">
+                          <img class="img-fluid" alt="jpnap_ix" src="https://s37613.pcdn.co/wp-content/uploads/2022/01/jpnap_ix.png" style="max-width:18rem;"><small class="text-white pl-2"></small>
+                          </a>
+                        </div>
+          </div>
+                    <div class="col-6 col-lg-3 my-2">
+            <div class="info card">
+                          <a href="https://www.jpix.ad.jp/en/" target="_blank">
+                          <img class="img-fluid" alt="jpix_ix" src="https://s37613.pcdn.co/wp-content/uploads/2022/01/jpix_ix.png" style="max-width:18rem;"><small class="text-white pl-2"></small>
+                          </a>
+                        </div>
+          </div>
+                    <div class="col-6 col-lg-3 my-2">
+            <div class="info card">
+                          <a href="https://www.linx.net/" target="_blank">
+                          <img class="img-fluid" alt="xlinx_ix" src="https://s37613.pcdn.co/wp-content/uploads/2022/01/xlinx_ix.png" style="max-width:18rem;"><small class="text-white pl-2"></small>
+                          </a>
+                        </div>
+          </div>
+                  </div>
+      </div>
+    </div>
+    <!-- End of partner section --> 
+
+    <div id="connect-networks" class="container section">
+  <div class="row d-flex">
+    <div class="col m-auto">
+      <h2 class="text-center title">Connected Networks</h2>
+     
+     <!-- IX Locations -->
+        <link rel="stylesheet" href="https://media.megaport.com/marketing/widgets/css/ix-locations.css" />
+        <div id="ixLocations"></div>
+        <script src="https://media.megaport.com/marketing/widgets/js/ix-locations.js"></script>
+    </div>
+  </div>
+</div>
+    <div class="features-1 section">
+            <div id="pulses" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 ml-auto mr-auto text-center">
+            <h2>Get Started</h2>
+<p>Point, click, and connect to global services in your Megaport account.</p>
+ 
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-10 text-center">
+
+                                      <a href="/pricing/" target="" class="btn btn-round btn-outline-primary btn-shadow mx-2">See Pricing</a>
+
+                            <a href="https://portal.megaport.com" target="" class="btn btn-round btn-primary btn-shadow mx-2">Create an Account</a>
+
+              
+          </div>
+
+        </div>
+      </div>
+    </div>
+                  <section class="section bg-transparent">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12">
+        
+    </div>
+                                  <div class="card-column col-12 col-md-6">        <a href="/blog/" class="link resource-link">
+        <div class="card hover-card">
+          <div class="card-body align-items-center" style="display: flex;">
+            <div style="margin-right: 15px; max-width:125px;">
+              <img class="img-fluid" src="https://s37613.pcdn.co/wp-content/uploads/2019/03/BlogIcon-e1551921384777.png">
+            </div>
+            <div>
+              <h4 class="strong" style="margin-bottom: 10px;">Blog</h4>
+              <p><p><span style="font-weight: 400;">Visit our blog for insights from our team.</span></p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+                                  <div class="card-column col-12 col-md-6">        <a href="https://docs.megaport.com/ix/" class="link resource-link">
+        <div class="card hover-card">
+          <div class="card-body align-items-center" style="display: flex;">
+            <div style="margin-right: 15px; max-width:125px;">
+              <img class="img-fluid" src="https://s37613.pcdn.co/wp-content/uploads/2019/02/KBIcon.png">
+            </div>
+            <div>
+              <h4 class="strong" style="margin-bottom: 10px;">Want a deep dive?</h4>
+              <p><p>View Megaport tech docs.</p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+        </a>
+      </div>
+            
+  </div>
+</section>
+          </main>
+              </div>
+    </div>
+        <div class="container-fluid bg-gradient" style="height:3px;">
+</div>
+<footer class="content-info main-footer">
+  <div class="container">
+      </div>
+  <div class="container">
+  <div class="row justify-content-start">
+    <nav class="breadcrumbs" aria-label="Breadcrumbs">
+    <ol class="breadcrumbs__list" vocab="http://schema.org/" typeof="BreadcrumbList" style="padding-left:25px;">
+      <!-- Breadcrumb NavXT 7.0.2 -->
+<li class="home"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Megaport." href="https://www.megaport.com" class="home" ><span property="name">Home</span></a><meta property="position" content="1"></span>&nbsp;<span class="breadcrumbs__separator" aria-hidden="true"><i class="fal fa-angle-right"></i></span>&nbsp;</li>
+<li class="post post-page"><span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" title="Go to Services." href="https://www.megaport.com/services/" class="post post-page" ><span property="name">Services</span></a><meta property="position" content="2"></span>&nbsp;<span class="breadcrumbs__separator" aria-hidden="true"><i class="fal fa-angle-right"></i></span>&nbsp;</li>
+<li class="post post-page current-item"><span class="post post-page current-item">MegaIX &#8211; Peering and Internet Exchange</span></li>
+    </ol></nav>
+  </div>
+</div>  
+      <div class="container py-5 footer_navigation_section">
+	  				<ul id="menu-footer-navigation" class="menu"><li class="active menu-item menu-item-has-children menu-product"><a href="https://www.megaport.com/services/">Product</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-port"><a href="https://docs.megaport.com/connections/creating-port/">Port</a></li>
+	<li class="menu-item menu-mcr"><a href="https://docs.megaport.com/connections/vxc/">MCR</a></li>
+	<li class="menu-item menu-megaport-marketplace"><a href="https://www.megaport.com/services/marketplace/">Megaport Marketplace</a></li>
+	<li class="menu-item menu-megaix"><a href="https://docs.megaport.com/ix/">MegaIX</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-developers"><a href="https://dev.megaport.com">Developers</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-api-docs"><a href="https://dev.megaport.com">API Docs</a></li>
+	<li class="menu-item menu-network-latency"><a href="https://www.megaport.com/network-latency/">Network Latency</a></li>
+	<li class="menu-item menu-packet-transfer-delay"><a href="https://www.megaport.com/legal/packet-transfer-delay/">Packet Transfer Delay</a></li>
+	<li class="menu-item menu-looking-glass"><a href="https://lg.megaport.com/">Looking Glass</a></li>
+	<li class="menu-item menu-support"><a href="https://www.megaport.com/contact/support/">Support</a></li>
+</ul>
+</li>
+<li class="active menu-item menu-item-has-children menu-partners"><a href="https://www.megaport.com/partners/">Partners</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-data-centre-partners"><a href="/datacentre-partners/">Data Centre Partners</a></li>
+	<li class="active menu-item menu-network-partners"><a href="/services/internet-exchange/#network-partners" aria-current="page">Network Partners</a></li>
+	<li class="menu-item menu-partner-programs"><a href="https://www.megaport.com/partners/">Partner Programs</a></li>
+	<li class="menu-item menu-partner-toolkit"><a href="https://www.megaport.com/partners/toolkit/">Partner Toolkit</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-has-children menu-company"><a href="https://www.megaport.com/about-megaport/">Company</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-about-megaport"><a href="https://www.megaport.com/about-megaport/">About Megaport</a></li>
+	<li class="menu-item menu-investor-centre"><a href="/investor/">Investor Centre</a></li>
+	<li class="menu-item menu-media-centre"><a href="https://www.megaport.com/media-centre/">Media Centre</a></li>
+	<li class="menu-item menu-careers"><a href="https://www.megaport.com/careers/">Careers</a></li>
+	<li class="menu-item menu-legal"><a href="https://www.megaport.com/legal/">Legal</a></li>
+	<li class="menu-item menu-contact"><a href="https://www.megaport.com/contact/">Contact</a></li>
+</ul>
+</li>
+</ul>
+		
+
+		<!-- California targeted content -->
+		<span class='geotargetlygeocontent1622005002776_content_1' style='display:none;'>
+			<div class="containe d-flex justify-content-end" style="margin-top:-2rem;">
+			<div class="col-6 col-lg-3 pl-3">
+			<a class="menu-item" href="https://go.megaport.com/donotsellmydata.html" style="color: #9a9a9a; line-height: 1.75;">Do Not Sell My Info</a>
+			</div>
+			</div>
+      	</span> 
+		<script>
+			(function(g,e,o,t,a,r,ge,tl,y){
+			s=function(){var def='geotargetlygeocontent1622005002776_default',len=g.getElementsByClassName(def).length;
+			if(len>0){for(i=0;i<len;i++){g.getElementsByClassName(def)[i].style.display='inline';}}};
+			t=g.getElementsByTagName(e)[0];y=g.createElement(e);
+			y.async=true;y.src='https://g1584674682.co/gc?refurl='+g.referrer+'&id=-Mab123CVabx-N50muer&winurl='+encodeURIComponent(window.location);
+			t.parentNode.insertBefore(y,t);y.onerror=function(){s()};
+			})(document,'script');
+		</script>
+		<noscript><style>.geotargetlygeocontent1622005002776_default{display:inline !important}</style></noscript>
+    <!-- End of CA target content -->
+
+		<!-- style for footer nav -->
+		<style type="text/css">
+			.footer_navigation_section > ul{
+				display: flex;
+				flex-direction: row;
+				list-style-type: none;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				padding-left:0;
+			}
+
+			.footer_navigation_section ul.sub-menu{
+				list-style-type: none;
+				padding-left: 0;
+				padding-top: 1rem;
+			}
+
+			.footer_navigation_section ul .menu-item-has-children > a{
+				letter-spacing: 2px;
+				font-weight: 600;
+				text-transform: uppercase;
+				color: #414141;
+				font-size: 80%;
+			}
+
+			.footer_navigation_section ul.sub-menu .menu-item a{
+				padding:5px 0;
+				color: #9a9a9a;
+				line-height: 1.75;
+			}
+
+			.footer_navigation_section ul.sub-menu .menu-item a{
+				
+			}
+
+
+			.footer_navigation_section ul .menu-item-has-children{
+				padding:1rem;
+				width:25%;
+			}
+
+
+			
+
+			@media  only screen and (max-width: 992px){
+				.footer_navigation_section ul .menu-item-has-children{
+					width:50%;
+					
+				}
+			}	
+
+			html, body {
+				max-width: 100%;
+				overflow-x: hidden;
+			}
+		</style>
+
+
+
+		
+
+    
+        <div class="row justify-content-center">
+            <ul class="social-icons list-inline">
+              <li class="h3 p-3 list-inline-item"><a href="https://www.facebook.com/megaportnetworks" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+              <li class="h3 p-3 list-inline-item"><a href="https://www.twitter.com/megaportnetwork" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              <li class="h3 p-3 list-inline-item"><a href="https://www.linkedin.com/company/megaport" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+              <li class="h3 p-3 list-inline-item"><a href="https://www.youtube.com/channel/UCdVx98wdrhcTCIuw8UE5hIA" target="_blank"  title="Youtube"><i class="fab fa-youtube"></i></a></li>
+              <li class="h3 p-3 list-inline-item"><a href="https://www.instagram.com/megaport/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+      </div>
+  <div class="copyrights py-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 text-center" style="margin:auto;">
+                          <div class="col-12 text-center"><h4 class="brand mpDot h3"><i class="fab fa-megaport"></i></h4>
+                          <hr>
+                            <p class="small">
+                              &copy; 2022 Megaport.com<br>
+                                Megaport, Virtual Cross Connect, VXC, and MegaIX are trademarks and registered trademarks of Megaport and its affiliates.
+                                <br>All logos © their respective owners - <a href="https://megaport.com/legal/privacy-policy/" target="_blank">Privacy Policy and Site Terms</a>
+                                <br />If you are reading our footer you must be bored. <a href="https://www.megaport.com/snake/">Try playing some snake.</a>
+                            </p>
+
+                            <p class="small col-md-10 mx-auto">
+							We acknowledge the Turrbal people, Traditional Custodians of the land on which we live, work, and connect.<br/> We pay respects to their Elders, past and present.
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+</footer>
+<script src="https://yourir.info/93d58eb1689d3802.js"></script>
+<script type="text/javascript" src="https://media.megaport.com/widgets/megaport-widgets.js"></script>
+<script type="text/javascript" src="https://s37613.pcdn.co/wp-content/themes/megaport/resources/assets/scripts/mkto-megaport-scripts.js"></script>
+<script type="text/javascript" src="https://s37613.pcdn.co/wp-content/themes/megaport/resources/assets/scripts/mkto-ppc-tracking-script.js"></script>
+<!-- OneTrust Cookies Consent Notice start -->
+<script src="https://cookiesapac.blob.core.windows.net/langswitch/a2a40493-cce0-475b-8636-032306739bb2.js" type="text/javascript" charset="UTF-8"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+
+<script type="text/javascript">
+(function ($) {
+	$(document).ready(function () {
+		var toggleAjaxSearch = function () {
+			$('.search-trigger').click(function () {
+				if ($('#ajax_search_container').hasClass('searchHidden')) {
+					$('#ajax_search_container').removeClass('searchHidden').addClass('show_search_pop');
+					$(this).next().find(".ajax_s").focus();
+				}
+				return false;
+			});
+		};
+
+		var doAjaxSearch = function (options) {
+			var defaults = {
+				delay: 350,                //delay in ms for typing
+				minChars: 3,               //no. of characters after we start the search
+				scope: 'body'
+			};
+
+			this.options = $.extend({}, defaults, options);
+			this.scope = $(this.options.scope);
+			this.body = $("body");
+			this.timer = false;
+			this.doingSearch = false;
+			this.lastVal = "";
+			this.request = "";
+			this.bind_ev = function () {
+				this.scope.on('keyup', '.ajax_s', $.proxy(this.test_search, this));
+				this.body.on('mousedown', $.proxy(this.hide_search, this));
+
+				/* Show the results on input click */
+				$(".ajax_s").on('click focus', function () {
+					var res = $(this).closest(".mgp-search-form").find(".mgp_ajax_results");
+
+					if (!res.is(":empty") && $.trim($(this).val()) != '') {
+						res.slideDown('slow');
+					}
+					res.css("opacity", "1");
+					$(this).css("opacity", "1");
+				});
+
+				/* Hide the results on outside click */
+				this.body.on('mousedown', function (e) {
+					var element = $(e.target);
+					if (!element.is('.mgp_ajax_results, .ajax_s') && element.closest('.mgp_ajax_results').length == 0) {
+						$(".mgp-search-form .mgp_ajax_results").css("opacity", "0.5").slideUp('slow');
+						$(".mgp-search-form .ajax_s").css("opacity", "0.5");
+					}
+				});
+
+			};
+			this.test_search = function (e) {
+				clearTimeout(this.timer);
+				if ($.trim(e.currentTarget.value) == '' || $.trim(e.currentTarget.value.length) >= this.options.minChars) {
+					this.timer = setTimeout($.proxy(this.search, this, e), this.options.delay);
+				}
+			};
+			this.hide_search = function (e) {
+				var element = $(e.target);
+				if (!element.is('#ajax_search_container') && element.parents('#ajax_search_container').length == 0) {
+					$('#ajax_search_container').addClass('searchHidden').removeClass('show_search_pop');
+				}
+			};
+			this.search = function (e) {
+				var element = e.currentTarget;
+
+				var $this = this,
+					form = $(element).closest("form"),
+					wrap = $(element).closest(".mgp-search-wrap"),
+					results = wrap.find(".mgp_ajax_results"),
+					loading = wrap.find(".mgp-ajax-search-loading"),
+					values = form.serialize();
+
+				values += "&action=mgp_ajax_search";
+
+				if (form.data('context')) {
+					values += "&context=" + form.data('context');
+				}
+
+				//if it is not ajax search, bail out
+				if (!results.length) {
+					return;
+				}
+
+				//if it is another search in place
+				if ($this.doingSearch === true) {
+					//return;
+					this.request.abort();
+				}
+
+				//if current valuer matches last search value
+				if (this.lastVal == $.trim(element.value)) {
+					results.slideDown();
+					form.closest('.hero').addClass('has-result');
+					return;
+				}
+
+				//if current value is blank
+				if ($.trim(element.value) == '') {
+					results.slideUp('fast');
+					form.closest('.hero').removeClass('has-result');
+					return;
+				}
+
+
+				this.lastVal = $.trim(element.value);
+
+				this.request = $.ajax({
+					url: "https://www.megaport.com/wp-admin/admin-ajax.php",
+					type: "POST",
+					data: values,
+					beforeSend: function () {
+						loading.css('display', 'inline-block');
+						results.slideUp();
+						$this.doingSearch = true;
+					},
+					success: function (response) {
+						if (response == 0) {
+							response = "";
+						}
+
+						if (response == "") {
+							if (form.closest('.hero').length) {
+								form.closest('.hero').removeClass('has-result');
+							}
+							results.html(response);
+						} else {
+							if (form.closest('.hero').length) {
+								form.closest('.hero').addClass('has-result');
+							}
+
+							if (results.is(":empty")) {
+								results.hide().html(response).slideDown('slow');
+							} else {
+								results.html(response).slideDown('slow');
+							}
+						}
+					},
+					complete: function () {
+						/*$("#mgp_ajaxsearch").html(icon);*/
+						loading.css('display', 'none');
+						$this.doingSearch = false;
+						clearTimeout($this.timer);
+					}
+				});
+			};
+
+			//do search...
+			this.bind_ev();
+		};
+		if ($('.search-trigger').length) {
+			toggleAjaxSearch();
+		}
+		doAjaxSearch();
+	});
+})(jQuery)
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.0/js.cookie.min.js"></script>
+<script type="text/javascript">
+(function ($) {
+	$(document).ready(function () {
+		/** ofBar cookie **/
+		if ($('#ofBar').length) {
+			$('#ofBar .close').on('click', function () {
+				Cookies.set('ofBar', true, {
+					expires : 7
+				});
+			});
+
+			if (typeof Cookies.get('ofBar') == 'undefined') {
+				$('#ofBar').removeClass('d-none');
+			} else {
+				$('#ofBar').addClass('d-none');
+			}
+		}
+	});
+})(jQuery)
+</script>
+<script type="text/javascript">
+(function ($) {
+	$(document).ready(function () {
+		/** JazzyStrip cookie **/
+		if ($('#message').length) {
+			$('#message .close').on('click', function () {
+				Cookies.set('message', true, {
+					expires : 7
+				});
+			});
+
+			if (typeof Cookies.get('message') == 'undefined') {
+				$('#message').removeClass('d-none');
+			} else {
+				$('#message').addClass('d-none');
+			}
+		}
+	});
+})(jQuery)
+</script>
+
+<style type="text/css">
+.morphext > .animated {
+    display: inline-block;
+}
+span.home-connect.morphext {
+    border-bottom: 1px solid gray;
+}
+</style>
+<script src="//cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+<script>
+	jQuery(document).ready(function () {
+		if (jQuery('#customer-stories').length) {
+			jQuery('#customer-stories').mixItUp({
+				selectors : {
+					target : '.customer-story',
+					filter : '.story-filters .filter',
+				},
+				animation : {
+					duration : 300,
+					effects : 'fade translateZ(-100px)'
+				}
+			});
+
+			jQuery('.story-filters #regionSelect').on('change', function () {
+				var region = (this.value == 'all') ? '' : this.value;
+				jQuery('.story-filters .filter').each(function(){
+					var tag = jQuery(this).attr('data-tag');
+						tag = (tag == 'all') ? '' : tag;
+					jQuery(this).attr('data-filter', (tag + region == '') ? 'all' : (tag + region));
+				});
+				var filter = jQuery('.story-filters .filter.active').attr('data-filter');
+				jQuery.MixItUp.prototype._instances['customer-stories'].filter(filter);
+			});
+		}
+	});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
+<script type="text/javascript">
+(function ($) {
+	$(document).ready(function () {
+		$('.home-connect.morphext').Morphext({
+			animation: "flipInX",
+			separator: ",",
+			speed: 5000
+		});
+	});
+})(jQuery)
+</script>
+    <script type='text/javascript' id='ppress-frontend-script-js-extra'>
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/www.megaport.com\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"433e68dc87","disable_ajax_form":"false"};
+/* ]]> */
+</script>
+<script src="https://s37613.pcdn.co/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=3.2.9" id="ppress-frontend-script-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/themes/megaport/dist/scripts/main_aeda515c.js" id="sage/main.js-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/themes/megaport/dist/scripts/paperkit_aeda515c.js" id="sage/paper-kit.js-js"></script>
+<script src="https://s37613.pcdn.co/wp-content/themes/megaport/dist/scripts/navigation-master_aeda515c.js" id="sage/navigation-master.js-js"></script>
+  </body>
+</html>

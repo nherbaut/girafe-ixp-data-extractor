@@ -1,2 +1,0 @@
-nix.cz-daily_5T.csvx
-nix.sk-daily_5T.csvx
